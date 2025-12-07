@@ -1,0 +1,273 @@
+
+## 📌 Goal
+
+Map a point
+
+$$
+X = (X, Y, Z, 1)^T  \quad \text{(in world coordinates)}
+$$
+
+onto
+
+$$
+x = (u, v, 1)^T  \quad \text{(pixel / image coordinates)}
+$$
+
+using a **perspective camera model** (central/pinhole projection).
+
+---
+
+## 🔁 Four Coordinate Systems
+
+| Coordinate System  | Description                        |
+| ------------------ | ---------------------------------- |
+| **World**          | 3D coordinate frame of your scene  |
+| **Camera**         | Origin at optical center of camera |
+| **Image Plane**    | 2D plane inside camera (in meters) |
+| **Sensor (Pixel)** | Discrete pixel grid (u, v)         |
+
+---
+
+## 🔧 Step 1 – Transform world point → camera coordinates
+
+We need to describe where the **camera is located** and how it is **oriented** in the world.
+
+$$
+X_c = \underbrace{R}_{3\times3} \; X_w + \underbrace{t}_{3\times1}
+$$
+
+* $R$: rotation matrix (camera orientation)
+* $t$: translation (camera center position in world coordinates)
+
+👉 This conversion uses the **extrinsic parameters.**
+
+In homogeneous form:
+
+$$
+X_c = [R \; | \; t] \cdot X_w
+$$
+
+---
+
+## 🔭 Step 2 – Central (perspective) projection onto the image plane
+
+Given camera coordinates $X_c = (x_c, y_c, z_c)$,
+
+$$
+x_{img} = \left( \frac{x_c}{z_c}, \; \frac{y_c}{z_c}, \; 1 \right)^T
+$$
+
+This is **where light rays hit the image plane**.
+Note the division by $z_c$ ⇒ nonlinear (perspective).
+
+---
+
+## 📏 Step 3 – Convert image-plane coordinates → pixel coordinates
+
+This depends on the internal geometry of the camera: focal length, pixel sizes, skew, optical center, etc. These are the **intrinsic parameters**, encoded into matrix $K$:
+
+$$
+K =
+\begin{bmatrix}
+f_x & s & c_x \\
+0 & f_y & c_y \\
+0 & 0 & 1
+\end{bmatrix}
+$$
+
+* $f_x, f_y$: effective focal lengths in pixel units
+* $(c_x, c_y)$: principal point (optical center in pixels)
+* $s$: skew (usually 0)
+
+Pixel coordinates:
+
+$$
+x = K \cdot x_{img}
+$$
+
+---
+
+## ✅ Final Combined Mapping
+
+All three steps can be merged into one matrix equation:
+
+$$
+x \sim P \cdot X_w  \quad \text{with} \quad P = K \,[R \;|\; t]
+$$
+
+* $P \in \mathbb{R}^{3\times4}$: **camera projection matrix**
+* $X_w \in \mathbb{R}^{4}$: homogeneous world point
+* $x \in \mathbb{R}^{3}$: homogeneous pixel coordinate
+* “$\sim$” means equality up to scaling ⇒ you divide by the last coordinate to get (u,v)
+
+---
+
+## 🔄 Why can’t we invert this?
+
+Because projection collapses 3D depth onto 2D — so information *is lost*. From a single image you know only that the 3D point lies somewhere on a **ray** starting from the camera center through the pixel. You cannot recover the depth without:
+
+* Another camera (stereo/structure-from-motion)
+* Or prior knowledge
+
+---
+
+## 🎯 Summary Table
+
+| Transformation       | Matrix        | Parameters          |                   |
+| -------------------- | ------------- | ------------------- | ----------------- |
+| World → Camera       | ( \[R         | t] )                | Extrinsic (6 DOF) |
+| Camera → Image plane | divide by $z$ | Perspective         |                   |
+| Image plane → Pixels | $K$           | Intrinsic (4–5 DOF) |                   |
+| **Full projection**  | $P$           | 11 DOF total        |                   |
+
+---
+
+
+
+
+## ✅ **Introduction: What is a Camera Model?**
+
+A **camera model** is a *mathematical description* of how a 3D point in the world is projected onto a 2D image captured by a camera.
+
+It serves two major purposes:
+
+* To **simulate** how a camera sees the world.
+* To **recover 3D information** from images.
+
+Two types of parameters define a camera model:
+
+| Parameter Type | Meaning                           |
+| -------------- | --------------------------------- |
+| **Extrinsic**  | Where the camera *is* and *looks* |
+| **Intrinsic**  | How the camera *maps 3D → 2D*     |
+
+---
+
+## 📍 **Extrinsic Parameters** — *Where is the camera in the world?*
+
+Extrinsics describe the **position and orientation** of the camera in a 3D world coordinate system.
+
+* **3D Translation (t)** → Camera location in space (X, Y, Z).
+* **3D Rotation (R)** → Camera orientation: what direction is it facing.
+
+Together they form a 6-DoF (degrees of freedom) description:
+
+$$
+[R | t] \quad \text{(3×3 rotation + 3×1 translation)}
+$$
+
+👉 The **projection center** is the pinhole point where all rays intersect. Extrinsics tell us where this point lies in the world and which way the camera looks.
+
+---
+
+## 🔧 **Intrinsic Parameters** — *How does the camera map 3D → 2D pixels?*
+
+Intrinsics specify the **internal geometry** of the camera and the sensor. Assuming the camera is sitting at the origin and looking straight ahead, the intrinsics define how a 3D point is projected onto the **image plane** and then converted into **pixel coordinates**.
+
+Typical intrinsic parameters:
+
+| Symbol     | Meaning                                             |
+| ---------- | --------------------------------------------------- |
+| $f_x, f_y$ | Focal lengths in x and y (usually in pixels)        |
+| $c_x, c_y$ | Principal point on the image (optical center)       |
+| $s$        | Skew angle between image axes (≈0 for most cameras) |
+
+They are assembled in the **calibration matrix**:
+
+$$
+K =
+\begin{bmatrix}
+f_x & s & c_x \\
+0   & f_y & c_y \\
+0   & 0   & 1
+\end{bmatrix}
+$$
+
+> Intrinsics = *4–5 parameters*, depending on whether skew is considered.
+
+---
+
+## 🔢 **Projection Equation: Combining Extrinsic and Intrinsic Parameters**
+
+To map a world point $X = (X,Y,Z,1)^T$ to an image point $x = (u,v,1)^T$, we use:
+
+$$
+x \sim P \cdot X
+$$
+
+where
+
+$$
+P = K [R|t] \quad \text{is the } 3 \times 4 \text{ **projection matrix**}
+$$
+
+* **11 total degrees of freedom:**
+  6 (extrinsic) + 5 (intrinsic)
+* Multiplication produces a homogeneous pixel coordinate, which we divide by the last component to get $u,v$.
+
+> ⚠️ This mapping is **not invertible** — 3D → 2D loses depth. A pixel corresponds to a *ray* in 3D space.
+
+---
+
+## 🎯 **Direct Linear Transform (DLT): Estimating Camera Matrix $P$**
+
+The **DLT** algorithm is often used to compute the matrix $P$ *from correspondences*. Given ≥6 known 3D points and their matching 2D projections, we can solve for $P$ (up to scale) using linear algebra.
+
+Once $P$ is recovered, we can **factor it** into:
+
+* Intrinsics $K$
+* Rotation $R$
+* Translation $t$
+
+---
+
+## 🔍 **Lens Distortion**
+
+Real cameras are not perfect pinhole systems — lenses introduce **non-linear distortions**, e.g.:
+
+| Type       | Effect on image     |
+| ---------- | ------------------- |
+| Barrel     | Lines bulge outward |
+| Pincushion | Lines pinch inward  |
+
+These distortions are modeled by extra parameters (radial/tangential) and are typically removed during **camera calibration** so that the remaining model behaves like an ideal pinhole camera.
+
+---
+
+## 🛠️ **Calibration vs. Localization**
+
+| Task             | What is estimated                             |
+| ---------------- | --------------------------------------------- |
+| **Calibration**  | Intrinsic parameters (K), optional distortion |
+| **Localization** | Extrinsic parameters (R, t)                   |
+
+Calibration usually uses **checkerboard patterns** or known grids, while localization uses world landmarks.
+
+---
+
+## 📌 **Summary Table**
+
+| Component             | Matrix | Parameters                     |                              |
+| --------------------- | ------ | ------------------------------ | ---------------------------- |
+| Extrinsics            | \[R    |  t]                            | 3 rotations + 3 translations |
+| Intrinsics            | K      | $f_x,f_y,c_x,c_y,s$            |                              |
+| Full Projection       | P      | Combines both (11 DOF)         |                              |
+| Distortion (optional) | D      | Radial / tangential parameters |                              |
+
+---
+
+## 🧭 Final Takeaway
+
+A practical pinhole camera model is:
+
+$$
+x \sim K [R|t] X
+$$
+
+Once calibrated, this simple model forms the foundation for:
+
+* Augmented reality
+* 3D reconstruction
+* Pose estimation
+* Robotics & autonomous navigation
+
