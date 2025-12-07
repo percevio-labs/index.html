@@ -1,1341 +1,1251 @@
 <!DOCTYPE html>
-<html lang="en-us">
-  <head>
-    <link href="https://fonts.googleapis.com/css2?family=Merriweather:wght@300;400;700&family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="generator" content="Source Themes Academic 4.8.0">
-    <meta name="author" content="Muhammad Usama Saleem">
-    <meta name="description" content="Graduate Student">
-    <link rel="alternate" hreflang="en-us" href="https://m-usamasaleem.github.io/">
-    <meta name="theme-color" content="#2962ff">
-    <script src="/js/mathjax-config.js"></script>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/academicons/1.8.6/css/academicons.min.css" integrity="sha256-uFVgMKfistnJAfoCUQigIl+JfUaP47GrRKjf6CTPVmw=" crossorigin="anonymous">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.0-1/css/all.min.css" integrity="sha256-4w9DunooKSr3MFXHXWyFER38WmPdm361bQS/2KUWZbU=" crossorigin="anonymous">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.7/jquery.fancybox.min.css" integrity="sha256-Vzbj7sDDS/woiFS3uNKo8eIuni59rjyNGtXfstRzStA=" crossorigin="anonymous">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.18.1/styles/github.min.css" crossorigin="anonymous" title="hl-light">
-    <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.18.1/styles/dracula.min.css" crossorigin="anonymous" title="hl-dark" disabled> -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.5.1/leaflet.css" integrity="sha256-SHMGCYmST46SoyGgo4YR/9AlK1vf3ff84Aq9yK4hdqM=" crossorigin="anonymous">
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/lazysizes/5.1.2/lazysizes.min.js" integrity="sha256-Md1qLToewPeKjfAHU1zyPwOutccPAm5tahnaw7Osw0A=" crossorigin="anonymous" async></script>
-    <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js" integrity="" crossorigin="anonymous" async></script>
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat:400,700%7CRoboto:400,400italic,700%7CRoboto+Mono&display=swap">
-    <link rel="stylesheet" href="/css/academic.css">
-    <script src="https://identity.netlify.com/v1/netlify-identity-widget.js"></script>
-    <link rel="alternate" href="/index.xml" type="application/rss+xml" title="Muhammad Usama Saleem">
-    <link rel="manifest" href="/index.webmanifest">
-    <link rel="icon" type="image/png" href="/images/logo.jpg">
-    <link rel="apple-touch-icon" type="image/png" href="/images/icon_hu0b7a4cb9992c9ac0e91bd28ffd38dd00_9727_192x192_fill_lanczos_center_3.png">
-    <link rel="canonical" href="https://m-usamasaleem.github.io/">
-    <meta property="twitter:card" content="summary">
-    <meta property="og:site_name" content="Muhammad Usama Saleem">
-    <meta property="og:url" content="https://m-usamasaleem.github.io/">
-    <meta property="og:title" content="Muhammad Usama Saleem">
-    <meta property="og:description" content="Graduate Student">
-    <meta property="og:image" content="https://m-usamasaleem.github.io/images/icon_hu0b7a4cb9992c9ac0e91bd28ffd38dd00_9727_512x512_fill_lanczos_center_3.png">
-    <meta property="twitter:image" content="https://m-usamasaleem.github.io/images/icon_hu0b7a4cb9992c9ac0e91bd28ffd38dd00_9727_512x512_fill_lanczos_center_3.png">
-    <meta property="og:locale" content="en-us">
-    <meta property="og:updated_time" content="2022-05-17T16:00:00-04:00">
-    <script type="application/ld+json">
-      {
-        "@context": "https://schema.org",
-        "@type": "WebSite",
-        "potentialAction": {
-          "@type": "SearchAction",
-          "target": "https://m-usamasaleem.github.io?q={search_term_string}",
-          "query-input": "required name=search_term_string"
-        },
-        "url": "https://m-usamasaleem.github.io"
-      }
-    </script>
-    <title>Muhammad Usama Saleem</title>
-  </head>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Percevio Labs – See. Hear. Act. Intelligently.</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="description" content="Percevio Labs builds multimodal AI systems that see, hear, understand and act to automate repetitive knowledge work for enterprises." />
+
   <style>
-    .conference-name {
-      color: #A6372A;
-      font-style: italic;
-      font-weight: normal;
-      font-size: 1em;
+    :root {
+      --bg: #050509;
+      --bg-alt: #0b0b13;
+      --accent: #a855f7;
+      --accent-soft: rgba(168,85,247,0.12);
+      --text: #f9fafb;
+      --text-muted: #9ca3af;
+      --card: #111827;
+      --border: #1f2933;
+      --max-width: 1120px;
+      --radius-lg: 18px;
+      --radius-full: 999px;
+      --shadow-soft: 0 18px 40px rgba(0,0,0,0.45);
+      --transition-fast: 200ms ease;
     }
 
-    #visitor-map {
-      width: 100px;
-      height: 100px;
-      background: #f4f4f4;
-      /* Light background */
-      border: 1px solid #ddd;
-      /* Add a subtle border */
-      border-radius: 8px;
-      /* Optional rounded corners */
-      margin: 20px auto;
-      box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-      /* Optional shadow for a modern look */
-    }
-
-    #fallback-message {
-      text-align: center;
-      font-size: 1.2em;
-      color: #666;
-      margin-top: 20px;
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
     }
 
     body {
-      font-size: 80%;
-      /* Decrease font size to 90% of the default size */
-    }
-
-    /* Custom link styling */
-    a {
-      color: #A6372A;
-      /* Custom link color */
-      text-decoration: none;
-      /* Removes underline for a cleaner look */
-    }
-
-    a:hover {
-      text-decoration: underline;
-      /* Underline on hover for better accessibility */
-    }
-
-    /* Masthead */
-    .masthead {
-      height: 100vh;
-      min-height: 500px;
-      background-image: url('./website/head.jpg');
-      background-size: cover;
-      background-position: center;
-      background-repeat: no-repeat;
-      position: relative;
-    }
-
-    .masthead h1 {
-      font-size: 3rem;
-      color: white;
-      text-shadow: 0 4px 6px rgba(0, 0, 0, 0.5);
-      text-align: center;
-      padding-top: 40%;
-    }
-
-    /* Media Queries */
-    @media (max-width: 768px) {
-      h1 {
-        font-size: 2rem;
-      }
-
-      h2 {
-        font-size: 1.5rem;
-      }
-
-      .masthead h1 {
-        font-size: 2rem;
-        padding-top: 50%;
-      }
-    }
-
-    body {
-      font-family: 'Roboto', Arial, sans-serif;
-      background: linear-gradient(to bottom, #f8f9fa, #e9ecef);
-    }
-
-    h1,
-    h2,
-    h3 {
-      font-family: 'Poppins', Arial, sans-serif;
-      font-weight: 700;
-    }
-
-    a {
-      font-family: 'Poppins', Arial, sans-serif;
-      color: #A6372A;
-      text-decoration: none;
-    }
-
-    a:hover {
-      text-decoration: underline;
-    }
-
-    .responsive-padding {
-      padding: 40px;
-      /* Default padding */
-    }
-
-    @media (max-width: 768px) {
-      .responsive-padding {
-        padding: 20px;
-        /* Smaller padding for tablets */
-      }
-    }
-
-    @media (max-width: 576px) {
-      .responsive-padding {
-        padding: 10px;
-        /* Smallest padding for mobile devices */
-      }
-    }
-
-    body {
-      font-family: 'Merriweather', serif;
-      font-size: 1rem;
-      /* ≈16px */
+      font-family: system-ui, -apple-system, BlinkMacSystemFont, "SF Pro Text",
+        "Inter", "Segoe UI", sans-serif;
+      background: radial-gradient(circle at top, #111827 0, #020617 55%, #000 100%);
+      color: var(--text);
       line-height: 1.6;
-      /* extra breathing room */
-      color: #333;
-      /* dark gray, softer than pure black */
-      background-color: #fafafa;
+      scroll-behavior: smooth;
     }
 
-    h1,
-    h2,
-    h3,
-    h4,
-    h5,
-    h6 {
-      font-family: 'Roboto', sans-serif;
-      font-weight: 500;
-      color: #111;
-      /* almost black for strong hierarchy */
-      margin-top: 1.5em;
-      margin-bottom: 0.5em;
+    a {
+      color: inherit;
+      text-decoration: none;
     }
 
-    p {
-      margin-bottom: 1em;
+    img {
+      max-width: 100%;
+      display: block;
     }
 
-    ul,
-    ol {
-      margin-left: 1.5em;
-      /* indent lists */
-      margin-bottom: 1em;
+    video {
+      width: 100%;
+      height: auto;
+      aspect-ratio: 16 / 9;
+      object-fit: cover;
+      background: #000;
+    }
+
+    /* Layout */
+    .page-wrap {
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
+    }
+
+    main {
+      flex: 1;
     }
 
     .container {
-      max-width: 960px;
-      /* constrain line length to ~60–75ch */
-      margin: 0 auto;
-      padding: 0 1rem;
-    }
-
-    :root {
-      --brand-color: #A6372A;
-      /* a deeper, more subdued red */
-      --accent-color: #555;
-      /* for links and hover states */
-    }
-
-    a {
-      color: var(--brand-color);
-      text-decoration: none;
-    }
-
-    a:hover {
-      color: var(--accent-color);
-      text-decoration: underline;
-    }
-
-    section {
-      padding: 3rem 0;
-      border-bottom: 1px solid #e0e0e0;
-    }
-
-    section:last-of-type {
-      border-bottom: none;
-    }
-
-    html {
-      /* make 1rem equal to 14px instead of the browser default (~16px) */
-      font-size: 87.5%;
-      /* 16px * 0.875 = 14px */
-    }
-
-    /* Make the publications list 80% width and center it */
-    #publications .pub-list {
-      max-width: 90%;
-      margin: 0 auto;
-    }
-
-    /* Space out each entry a bit */
-    #publications .stream-item {
-      margin-bottom: 2rem;
-    }
-
-    /* (Optional) Tweak the heading under this section */
-    #publications h1 {
-      margin-bottom: 2rem;
-    }
-
-    /* Place this **after** your default avatar styles */
-    #profile .avatar.avatar-circle {
-      width: 150px !important;
-      /* or whatever fixed size you prefer */
-      height: 150px !important;
-      /* match width to keep it square */
-      border-radius: 50% !important;
-      /* ensure it's a perfect circle */
-      object-fit: cover !important;
-      /* crop/scale the image to fill the square */
-    }
-
-    .inline-logo {
-      display: inline-flex;
-      align-items: center;
-      /* vertical-center everything */
-      /*   margin: 0 0.5em;           /* small horizontal spacing */
-      */
-    }
-
-    .inline-logo img {
-      width: 20px;
-      /* or whatever you prefer */
-      height: auto;
-      /*   margin-right: 4px;         /* space between logo and name */
-      */
-    }
-
-    .inline-logo {
-      display: inline-flex;
-      align-items: center;
-      /*     margin: 0 0.25em; */
-    }
-
-    .inline-logo img {
-      width: 20px;
-      height: auto;
-    }
-
-    .logo-name {
-      font-weight: 700;
-      color: #A6372A;
-      /* your brand color */
-      text-decoration: none;
-      /*     margin: 0 0.25em; */
-    }
-
-    .logo-name:hover {
-      text-decoration: underline;
-    }
-
-    /* tighten up the gap after your News list */
-    #about .container>.row:last-of-type {
-      margin-bottom: 1rem;
-      /* was something much larger by default */
-    }
-
-    /* reduce the top‐padding of the Publications section */
-    #publications {
-      padding-top: 1.5rem !important;
-      /* instead of the default 3rem */
-    }
-
-    /* if you still see too much space, also trim the section wrapper: */
-    #publications .container {
-      margin-top: 0;
-    }
-
-    #about.home-section {
-      padding-top: 1.5rem !important;
-      padding-bottom: 1.5rem !important;
-    }
-
-    /* narrow the default container gutters */
-    #about .container {
-      max-width: 960px;
-      padding-left: 0.5rem;
-      padding-right: 0.5rem;
-    }
-
-    /* shrink the avatar column */
-    #about .col-lg-2 {
-      max-width: 16.6667%;
-      flex: 0 0 16.6667%;
-    }
-
-    /* slightly reduce h1 → p spacing */
-    #about h1 {
-      margin-bottom: 0.5rem;
-    }
-
-    /* tighten the gap before Publications */
-    #about .network-icon+h2,
-    #about p+h2 {
-      margin-top: 1.5rem;
-    }
-
-    /* style your bell icon */
-    .news-icon {
-      color: #A6372A;
-      /* same brand red */
-      margin-right: 0.5em;
-      /* space between icon and date */
-      font-size: 1em;
-      /* match your text size */
-    }
-
-    /* style the company names */
-    .logo-name {
-      font-weight: 700;
-      color: var(--brand-color);
-      text-decoration: none;
-      margin: 0 0.25em;
-    }
-
-    .logo-name:hover {
-      text-decoration: underline;
-    }
-
-    .news-heading {
-      display: flex;
-      align-items: center;
-      font-family: 'Roboto', sans-serif;
-      margin-bottom: 0.5em;
-    }
-
-    .news-heading .news-icon {
-      color: #A6372A;
-      margin-left: 0.5em;
-      font-size: 1.2em;
-    }
-
-    .news-list {
-      font-size: 0.8em;
-      list-style: none;
-      padding-left: 0;
-    }
-
-    .news-list li {
-      margin-bottom: 0.5em;
-      line-height: 1.4;
-    }
-
-    .news-list .news-icon {
-      color: #A6372A;
-      margin-right: 0.25em;
-    }
-
-    .logo-name {
-      font-weight: 700;
-      color: #A6372A;
-      text-decoration: none;
-    }
-
-    .logo-name:hover {
-      text-decoration: underline;
-    }
-
-    /* constrain the publications list to ~80% width, centered */
-    #publications .pub-list {
-      max-width: 80%;
-      margin: 0 auto;
-    }
-
-    #publications .stream-item.boxed {
-      display: flex;
-      flex-wrap: nowrap;
-      position: relative;
-      padding: 1.5rem;
-      border: 1px solid #e0e0e0;
-      border-radius: 8px;
-      margin-bottom: 2rem;
-      background: #fff;
-    }
-
-    /* Text area: leave space on the right for the thumbnail */
-    #publications .stream-item.boxed .media-body {
-      flex: 1 1 auto;
-      padding-right: 180px;
-      /* thumbnail width + gap */
-    }
-
-    /* Thumbnail/video */
-    #publications .stream-item.boxed .thumbnail {
-      position: absolute;
-      top: 1.5rem;
-      right: 1.5rem;
-      width: 150px;
-      height: 90px;
-      border-radius: 4px;
-      overflow: hidden;
-      flex: 0 0 auto;
-    }
-
-    #publications .stream-item.boxed .thumbnail video {
       width: 100%;
-      height: 100%;
-      object-fit: cover;
+      max-width: var(--max-width);
+      margin: 0 auto;
+      padding: 0 1.25rem;
     }
 
-    /* Headings & metadata */
-    #publications .stream-item.boxed .article-title {
-      margin: 0 0 0.25rem;
+    /* Top Nav */
+    header {
+      position: sticky;
+      top: 0;
+      z-index: 40;
+      backdrop-filter: blur(14px);
+      background: linear-gradient(to bottom,
+        rgba(2,6,23,0.92),
+        rgba(2,6,23,0.70),
+        transparent
+      );
+      border-bottom: 1px solid rgba(31, 41, 55, 0.8);
     }
 
-    #publications .stream-item.boxed .conference-name {
-      font-style: italic;
-      color: #A6372A;
+    .nav-bar {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 0.9rem 0;
+      gap: 1.5rem;
+    }
+
+    .logo {
+      display: flex;
+      align-items: baseline;
+      gap: 0.4rem;
+      font-weight: 700;
+      letter-spacing: 0.04em;
+    }
+
+    .logo-main {
+      font-size: 1.1rem;
+    }
+
+    .logo-accent {
+      font-size: 1.1rem;
+      color: var(--accent);
+    }
+
+    .logo-tagline {
+      font-size: 0.7rem;
+      color: var(--text-muted);
+    }
+
+    .nav-links {
+      display: flex;
+      gap: 1.4rem;
+      font-size: 0.85rem;
+    }
+
+    .nav-links a {
+      color: var(--text-muted);
+      position: relative;
+      padding-bottom: 0.15rem;
+    }
+
+    .nav-links a::after {
+      content: "";
+      position: absolute;
+      left: 0;
+      bottom: 0;
+      height: 2px;
+      width: 0;
+      background: linear-gradient(to right, var(--accent), #6366f1);
+      border-radius: 999px;
+      transition: width var(--transition-fast);
+    }
+
+    .nav-links a:hover {
+      color: var(--text);
+    }
+
+    .nav-links a:hover::after {
+      width: 100%;
+    }
+
+    .nav-cta {
+      display: flex;
+      align-items: center;
+      gap: 0.6rem;
+    }
+
+    .btn {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      padding: 0.55rem 1.3rem;
+      border-radius: var(--radius-full);
+      border: 1px solid transparent;
+      font-size: 0.85rem;
+      cursor: pointer;
+      transition: transform var(--transition-fast),
+                  box-shadow var(--transition-fast),
+                  background var(--transition-fast),
+                  border-color var(--transition-fast),
+                  color var(--transition-fast);
+      white-space: nowrap;
+      text-decoration: none;
+    }
+
+    .btn-primary {
+      background: radial-gradient(circle at top left, #a855f7, #4f46e5);
+      border-color: rgba(148, 163, 184, 0.35);
+      color: #f9fafb;
+      box-shadow: 0 14px 30px rgba(15,23,42,0.9);
+    }
+
+    .btn-primary:hover {
+      transform: translateY(-1px);
+      box-shadow: 0 20px 40px rgba(15,23,42,1);
+      filter: brightness(1.04);
+    }
+
+    .btn-ghost {
+      border-color: rgba(148,163,184,0.5);
+      color: var(--text-muted);
+      background: rgba(15,23,42,0.8);
+    }
+
+    .btn-ghost:hover {
+      background: rgba(15,23,42,1);
+      color: var(--text);
+    }
+
+    /* Mobile nav */
+    .nav-toggle {
+      display: none;
+      border: 1px solid rgba(148,163,184,0.5);
+      border-radius: 999px;
+      background: rgba(15,23,42,0.9);
+      padding: 0.35rem 0.6rem;
+      cursor: pointer;
+    }
+
+    .nav-toggle span {
+      display: block;
+      width: 16px;
+      height: 2px;
+      border-radius: 999px;
+      background: #e5e7eb;
+      position: relative;
+    }
+
+    .nav-toggle span::before,
+    .nav-toggle span::after {
+      content: "";
+      position: absolute;
+      left: 0;
+      width: 16px;
+      height: 2px;
+      border-radius: 999px;
+      background: #e5e7eb;
+    }
+
+    .nav-toggle span::before {
+      top: -5px;
+    }
+
+    .nav-toggle span::after {
+      top: 5px;
+    }
+
+    .nav-menu {
+      display: flex;
+      align-items: center;
+      gap: 1.5rem;
+    }
+
+    /* Hero */
+    .hero {
+      padding: 3.5rem 0 3rem;
+      position: relative;
+      overflow: hidden;
+    }
+
+    .hero-grid {
+      display: grid;
+      grid-template-columns: minmax(0, 1.4fr) minmax(0, 1.1fr);
+      gap: 3rem;
+      align-items: center;
+    }
+
+    .hero-label {
+      font-size: 0.78rem;
+      text-transform: uppercase;
+      letter-spacing: 0.15em;
+      color: var(--accent);
+      margin-bottom: 0.9rem;
+    }
+
+    .hero-title {
+      font-size: clamp(2.1rem, 4vw, 2.7rem);
+      line-height: 1.1;
       margin-bottom: 0.75rem;
     }
 
-    #publications .stream-item.boxed .stream-meta.article-metadata {
-      font-size: 0.8em;
-      margin-bottom: 1rem;
+    .hero-highlight {
+      color: var(--accent);
     }
 
-    /* Summary */
-    #publications .stream-item.boxed .media-summary {
-      font-size: 0.8em;
-      line-height: 1.5;
-      margin-bottom: 1rem;
-      color: #333;
+    .hero-subtitle {
+      font-size: 0.98rem;
+      color: var(--text-muted);
+      max-width: 32rem;
+      margin-bottom: 1.6rem;
     }
 
-    /* Buttons */
-    #publications .stream-item.boxed .btn-links a {
-      margin-right: 0.5rem;
+    .hero-pill-row {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 0.55rem;
+      margin-bottom: 1.8rem;
     }
 
-    #publications .stream-item.boxed {
-      transition: background-color 0.2s ease;
+    .pill {
+      border-radius: 999px;
+      padding: 0.25rem 0.65rem;
+      font-size: 0.7rem;
+      border: 1px solid rgba(148,163,184,0.55);
+      color: var(--text-muted);
+      background: rgba(15,23,42,0.8);
     }
 
-    /* restore the hover “highlight” */
-    #publications .stream-item.boxed:hover {
-      background-color: rgba(166, 55, 42, 0.05);
+    .hero-metrics {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 1.2rem;
+      font-size: 0.75rem;
+      color: var(--text-muted);
     }
 
-    /* Highlight style for June 2025 news items */
-    .highlight-june-2025 {
-      background-color: rgba(166, 55, 42, 0.08);
-      border-left: 4px solid var(--brand-color);
-      padding: 0.75em 1em;
-      margin-bottom: 0.5em;
-      border-radius: 4px;
+    .hero-metric strong {
+      display: block;
+      font-size: 1rem;
+      color: var(--text);
     }
 
-    #experience .experience-item {
+    .hero-orbit-card {
+      background: radial-gradient(circle at top, #111827, #020617);
+      border-radius: 24px;
+      padding: 1.6rem 1.5rem;
+      box-shadow: var(--shadow-soft);
+      border: 1px solid rgba(148,163,184,0.3);
+      position: relative;
+      overflow: hidden;
+    }
+
+    .hero-orbit-card::before {
+      content: "";
+      position: absolute;
+      width: 260px;
+      height: 260px;
+      background: radial-gradient(circle, rgba(168,85,247,0.35), transparent 60%);
+      top: -30%;
+      right: -20%;
+      opacity: 0.8;
+      filter: blur(2px);
+      pointer-events: none;
+    }
+
+    .orbit-heading {
+      font-size: 0.85rem;
+      letter-spacing: 0.12em;
+      text-transform: uppercase;
+      color: var(--text-muted);
+      margin-bottom: 0.6rem;
+    }
+
+    .orbit-main {
+      font-size: 1.05rem;
+      margin-bottom: 0.45rem;
+    }
+
+    .orbit-main span {
+      color: var(--accent);
+    }
+
+    .orbit-sub {
+      font-size: 0.78rem;
+      color: var(--text-muted);
+      margin-bottom: 0.9rem;
+    }
+
+    .orbit-list {
+      display: grid;
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+      gap: 0.6rem 0.9rem;
+      font-size: 0.78rem;
+    }
+
+    .orbit-tag {
+      display: inline-flex;
+      align-items: center;
+      gap: 0.35rem;
+      padding: 0.3rem 0.55rem;
+      border-radius: 999px;
+      background: rgba(15,23,42,0.9);
+      border: 1px solid rgba(148,163,184,0.25);
+      color: var(--text-muted);
+    }
+
+    .orbit-dot {
+      width: 6px;
+      height: 6px;
+      border-radius: 999px;
+      background: var(--accent);
+      box-shadow: 0 0 0 2px rgba(168,85,247,0.4);
+    }
+
+    /* Sections */
+    section {
+      padding: 3rem 0;
+    }
+
+    section:nth-of-type(even) {
+      background: radial-gradient(circle at top, #020617, #020617);
+    }
+
+    .section-header {
+      text-align: left;
+      margin-bottom: 1.8rem;
+    }
+
+    .section-kicker {
+      font-size: 0.8rem;
+      text-transform: uppercase;
+      letter-spacing: 0.15em;
+      color: var(--accent);
+      margin-bottom: 0.3rem;
+    }
+
+    .section-title {
+      font-size: 1.5rem;
+      margin-bottom: 0.4rem;
+    }
+
+    .section-subtitle {
+      font-size: 0.9rem;
+      color: var(--text-muted);
+      max-width: 36rem;
+    }
+
+    /* Cards / grids */
+    .grid-3 {
+      display: grid;
+      grid-template-columns: repeat(3, minmax(0, 1fr));
+      gap: 1.4rem;
+    }
+
+    .grid-2 {
+      display: grid;
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+      gap: 1.4rem;
+    }
+
+    .card {
+      background: var(--card);
+      border-radius: var(--radius-lg);
+      border: 1px solid var(--border);
+      padding: 1.3rem 1.2rem;
+      box-shadow: 0 14px 30px rgba(0,0,0,0.4);
+    }
+
+    .card h3 {
+      font-size: 1rem;
+      margin-bottom: 0.4rem;
+    }
+
+    .card p {
+      font-size: 0.86rem;
+      color: var(--text-muted);
+    }
+
+    .badge {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      padding: 0.2rem 0.6rem;
+      border-radius: 999px;
+      border: 1px solid rgba(148,163,184,0.45);
+      font-size: 0.7rem;
+      color: var(--text-muted);
+      margin-bottom: 0.4rem;
+    }
+
+    .list {
+      list-style: none;
+      display: grid;
+      gap: 0.35rem;
+      font-size: 0.86rem;
+      color: var(--text-muted);
+      padding-left: 0;
+    }
+
+    .list li::before {
+      content: "•";
+      margin-right: 0.45rem;
+      color: var(--accent);
+    }
+
+    /* Team */
+    .team-grid {
+      display: grid;
+      grid-template-columns: repeat(3, minmax(0, 1fr));
+      gap: 1.4rem;
+    }
+
+    .team-card {
+      display: flex;
+      gap: 0.9rem;
+      align-items: flex-start;
+    }
+
+    .avatar {
+      width: 52px;
+      height: 52px;
+      border-radius: 999px;
+      background: linear-gradient(135deg, var(--accent), #4f46e5);
       display: flex;
       align-items: center;
-      margin-bottom: 2rem;
+      justify-content: center;
+      font-size: 1.1rem;
+      font-weight: 600;
+      box-shadow: 0 0 0 2px #020617;
     }
 
-    #experience .company-logo {
-      flex: 0 0 80px;
-      margin-right: 1.5rem;
+    .team-meta h3 {
+      font-size: 0.95rem;
+      margin-bottom: 0.15rem;
     }
 
-    #experience .company-logo img {
-      width: 150px;
-      /* or whatever full size you want */
-      height: auto;
-      /* preserve aspect ratio */
-      max-width: none;
-      /* override any library constraints */
+    .team-meta p {
+      font-size: 0.8rem;
+      color: var(--text-muted);
     }
 
-    #experience .experience-details h3 {
-      margin-top: 0;
+    /* Contact */
+    .contact-grid {
+      display: grid;
+      grid-template-columns: minmax(0, 1.3fr) minmax(0, 1fr);
+      gap: 1.4rem;
     }
 
-    .experience-details p {
-      display: inline-flex;
-      align-items: baseline;
-      /* keep text aligned nicely */
-      gap: 2rem;
-      /* space between location and dates */
+    .contact-form {
+      display: grid;
+      gap: 0.8rem;
+    }
+
+    label {
+      font-size: 0.78rem;
+      color: var(--text-muted);
+      display: block;
+      margin-bottom: 0.15rem;
+    }
+
+    input, textarea {
+      width: 100%;
+      border-radius: 11px;
+      border: 1px solid rgba(51,65,85,0.9);
+      background: rgba(15,23,42,0.9);
+      padding: 0.55rem 0.7rem;
+      color: var(--text);
+      font-size: 0.85rem;
+      outline: none;
+      transition: border-color 160ms ease, box-shadow 160ms ease,
+                  background 160ms ease;
+      resize: vertical;
+      min-height: 42px;
+    }
+
+    input:focus,
+    textarea:focus {
+      border-color: var(--accent);
+      box-shadow: 0 0 0 1px rgba(168,85,247,0.45);
+      background: #020617;
+    }
+
+    textarea {
+      min-height: 96px;
+    }
+
+    .contact-note {
+      font-size: 0.8rem;
+      color: var(--text-muted);
+      margin-top: 0.6rem;
+    }
+
+    /* Footer */
+    footer {
+      border-top: 1px solid rgba(31,41,55,0.9);
+      background: radial-gradient(circle at top, #020617, #000);
+      padding: 1.8rem 0;
+      font-size: 0.78rem;
+      color: var(--text-muted);
+    }
+
+    .footer-grid {
+      display: flex;
+      justify-content: space-between;
+      gap: 1.2rem;
       flex-wrap: wrap;
-      /* in case it needs to wrap on small screens */
+      align-items: center;
     }
 
-    #experience .experience-details ul {
-      margin: 0;
-      padding-left: 1.25em;
+    .footer-links {
+      display: flex;
+      gap: 0.9rem;
+      flex-wrap: wrap;
     }
 
-    #experience .container {
-      padding: 3rem;
-      border-radius: 8px;
+    .footer-links a {
+      color: var(--text-muted);
     }
 
-    /* match your publications & posts headings */
-    #experience .section-heading h1 {
-      margin-top: 1.5rem;
-      /* same top spacing */
-      margin-bottom: 2rem;
-      /* same bottom spacing */
-      font-size: 2.5rem;
-      /* match your other 
-																																	
-																																
-																																<h1> in .section-heading */
-      text-align: left;
-      /* override any stray centering */
-      border-bottom: none;
-      /* no extra lines */
+    .footer-links a:hover {
+      color: var(--text);
     }
 
-    #experience .container {
-      background-color: #fff !important;
+    /* Responsive */
+    @media (max-width: 900px) {
+      .hero-grid {
+        grid-template-columns: minmax(0, 1fr);
+      }
+      .hero {
+        padding-top: 2.6rem;
+      }
+      .hero-orbit-card {
+        order: -1;
+      }
+      .grid-3 {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+      }
+      .contact-grid,
+      .grid-2 {
+        grid-template-columns: minmax(0, 1fr);
+      }
+      .team-grid {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+      }
     }
 
-    #experience.home-section {
-      background-color: #fff;
-    }
+    @media (max-width: 720px) {
+      .nav-menu {
+        display: none;
+        position: absolute;
+        inset: 100% 0 auto 0;
+        background: rgba(2,6,23,0.97);
+        border-bottom: 1px solid rgba(31,41,55,0.9);
+        padding: 0.75rem 1.25rem 1rem;
+        flex-direction: column;
+        gap: 0.8rem;
+      }
 
-    /* 1) Make the entire Experience section pure white */
-    #experience {
-      background-color: #fff;
-      /* tighten its top & bottom padding to match your other sections */
-      padding-top: 1.5rem !important;
-      padding-bottom: 1.5rem !important;
-    }
+      .nav-menu.open {
+        display: flex;
+      }
 
-    /* 2) Kill the section‐border “hairlines” just above & below it */
-    #experience,
-    #experience+section {
-      border-bottom: none !important;
-    }
+      .nav-links {
+        flex-direction: column;
+        gap: 0.7rem;
+      }
 
-    /* 3) Reduce the huge gutters between sections */
-    section {
-      /* shrink the 3rem default to something tighter if you like */
-      padding-top: 1.5rem;
-      padding-bottom: 1.5rem;
-    }
+      .nav-cta {
+        justify-content: flex-start;
+      }
 
-    /* 4) If your HTML is emitting extra 
-																																		
-																																	
-																																	<hr> tags, hide them */
-    hr {
-      display: none;
-    }
+      .nav-toggle {
+        display: inline-flex;
+      }
 
-    /* 1) Make the page background pure white */
-    body {
-      background-color: #fff;
-    }
+      .hero {
+        padding-top: 2.2rem;
+      }
 
-    /* 2) Keep the Experience container itself white */
-    #experience .container {
-      background-color: #fff;
-    }
+      section {
+        padding: 2.3rem 0;
+      }
 
-    /* 3) Remove the horizontal “border” between Experience and the next section */
-    section#experience {
-      border-bottom: none;
-    }
-
-    /* 4) Match the padding of the other sections (you already have 1.5rem if you like it) */
-    section#experience,
-    section#experience+section {
-      padding-top: 1.5rem;
-      padding-bottom: 1.5rem;
-    }
-
-    /* 1) Shrink the default section padding a bit */
-    section {
-      padding-top: 2rem;
-      /* was 3rem */
-      padding-bottom: 2rem;
-      /* was 3rem */
-    }
-
-    /* 2) If you want them even tighter only between Experience → Publications */
-    section#experience {
-      padding-bottom: 1.5rem;
-    }
-
-    section#publications {
-      padding-top: 1.5rem;
-    }
-
-    /* 3) Remove any extra hr or border from the bottom of #experience */
-    section#experience {
-      border-bottom: none;
-      margin-bottom: 0;
-      /* in case your theme adds extra space */
-    }
-
-    /* 4) Make sure headings don’t add huge margins */
-    section h1 {
-      margin-top: 0.5rem;
-      margin-bottom: 1rem;
-    }
-
-    /* tighten vertical spacing */
-    section {
-      padding: 2rem 0;
-    }
-
-    section#experience {
-      padding-bottom: 1.5rem;
-      border-bottom: none;
-      margin-bottom: 0;
-    }
-
-    /* center and constrain work experience */
-    #experience .container {
-      max-width: 800px;
-      margin: 0 auto;
-      padding: 0 1rem;
-    }
-
-    /* heading margins */
-    #experience h1 {
-      margin: 0.5rem 0 1rem;
+      .grid-3 {
+        grid-template-columns: minmax(0, 1fr);
+      }
     }
   </style>
-  <aside class="search-results" id="search">
-    <div class="container">
-      <section class="search-header">
-        <div class="row no-gutters justify-content-between mb-3">
-          <div class="col-6">
-            <h1>Search</h1>
-          </div>
-          <div class="col-6 col-search-close">
-            <a class="js-search" href="#">
-              <i class="fas fa-times-circle text-muted" aria-hidden="true"></i>
-            </a>
-          </div>
+</head>
+<body>
+<div class="page-wrap">
+  <header>
+    <div class="container nav-bar">
+      <div>
+        <div class="logo">
+          <span class="logo-main">Percevio</span>
+          <span class="logo-accent">Labs</span>
         </div>
-        <div id="search-box">
-          <input name="q" id="search-query" placeholder="Search..." autocapitalize="off" autocomplete="off" autocorrect="off" spellcheck="false" type="search" class="form-control">
-        </div>
-      </section>
-      <section class="section-search-results">
-        <div id="search-hits"></div>
-      </section>
-    </div>
-  </aside>
-  <nav class="navbar navbar-expand-lg navbar-light compensate-for-scrollbar" id="navbar-main">
-    <div class="container">
-      <div class="d-none d-lg-inline-flex">
-        <a class="navbar-brand" href="/">Muhammad Usama Saleem</a>
+        <div class="logo-tagline">See. Hear. Act. Intelligently.</div>
       </div>
-      <button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#navbar-content" aria-controls="navbar" aria-expanded="false" aria-label="Toggle navigation">
-        <span>
-          <i class="fas fa-bars"></i>
-        </span>
+
+      <button class="nav-toggle" aria-label="Toggle navigation">
+        <span></span>
       </button>
-      <div class="navbar-brand-mobile-wrapper d-inline-flex d-lg-none">
-        <a class="navbar-brand" href="/">Muhammad Usama Saleem</a>
+
+      <div class="nav-menu" id="navMenu">
+        <nav class="nav-links">
+          <a href="#hero">Home</a>
+          <a href="#solutions">Solutions</a>
+          <a href="#technology">Technology</a>
+          <a href="#industries">Industries</a>
+          <a href="#research">Research</a>
+          <a href="#operating">Operating Model</a>
+          <a href="#marketing">Growth & GTM</a>
+          <a href="#about">About</a>
+          <a href="#contact">Contact</a>
+        </nav>
+        <div class="nav-cta">
+          <a href="#contact" class="btn btn-primary">Book a Demo</a>
+        </div>
       </div>
-      <div class="navbar-collapse main-menu-item collapse justify-content-start" id="navbar-content">
-        <ul class="navbar-nav d-md-inline-flex">
-          <li class="nav-item">
-            <a class="nav-link " href="/#about" data-target="#about">
-              <span>Home</span>
-            </a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link " href="/#publications" data-target="#publications">
-              <span>Research</span>
-            </a>
-          </li>
-          <!-- <li class="nav-item"><a class="nav-link " href="/#experience" data-target="#experience"><span>Experience</span></a></li> -->
-          <!-- <li class="nav-item"><a class="nav-link " href="/#projects" data-target="#projects"><span>Projects</span></a></li> -->
-          <!-- <li class="nav-item"><a class="nav-link " href="/#posts" data-target="#posts"><span>Posts</span></a></li> -->
-        </ul>
-      </div>
-      <!-- <ul class="nav-icons navbar-nav flex-row ml-auto d-flex pl-md-2"><li class="nav-item"><a class="nav-link js-search" href="#" aria-label="Search"><i class="fas fa-search" aria-hidden="true"></i></a></li><li class="nav-item dropdown theme-dropdown"><a href="#" class="nav-link js-theme-selector" data-toggle="dropdown" aria-haspopup="true"><i class="fas fa-palette" aria-hidden="true"></i></a><div class="dropdown-menu"><a href="#" class="dropdown-item js-set-theme-light"><span>Light</span></a><a href="#" class="dropdown-item js-set-theme-dark"><span>Dark</span></a><a href="#" class="dropdown-item js-set-theme-auto"><span>Automatic</span></a></div></li></ul> -->
-      <ul class="nav-icons navbar-nav flex-row ml-auto d-flex pl-md-2">
-        <li class="nav-item">
-          <a class="nav-link js-search" href="#" aria-label="Search">
-            <i class="fas fa-search" aria-hidden="true"></i>
-          </a>
-        </li>
-      </ul>
     </div>
-  </nav>
-  <span class="js-widget-page d-none"></span>
-  <section id="about" class="home-section wg-about">
-    <div class="container">
-      <div class="row">
-        <!-- shrink avatar column to give more room for text -->
-        <div class="col-12 col-lg-3">
-          <div id="profile">
-            <img class="avatar avatar-circle" src="/author/usama/image.jpeg" alt="Muhammad Usama Saleem">
-            <div class="portrait-title">
-              <h2>Muhammad Usama Saleem</h2>
-              <h3>Ph.D. Student</h3>
-              <h3>
-                <span>University of North Carolina at Charlotte</span>
-              </h3>
+  </header>
+
+  <main>
+    <!-- Hero -->
+    <section id="hero" class="hero">
+      <div class="container hero-grid">
+        <div>
+          <div class="hero-label">Multimodal Enterprise Intelligence</div>
+          <h1 class="hero-title">
+            AI that <span class="hero-highlight">sees, hears and acts</span>
+            so your teams can focus on strategy.
+          </h1>
+          <p class="hero-subtitle">
+            Percevio Labs builds multimodal AI agents that understand the real world—
+            from video, audio and text—then automate repetitive knowledge work
+            across your organization.
+          </p>
+
+          <div class="hero-pill-row">
+            <span class="pill">Video, Audio, Text & 3D</span>
+            <span class="pill">Enterprise-grade orchestration</span>
+            <span class="pill">Automation, not just insights</span>
+          </div>
+
+          <div style="display:flex; gap:0.7rem; margin-bottom:1.3rem; flex-wrap:wrap;">
+            <a href="#contact" class="btn btn-primary">Talk to our team</a>
+            <a href="#technology" class="btn btn-ghost">Explore the engine</a>
+          </div>
+
+          <div class="hero-metrics">
+            <div class="hero-metric">
+              <strong>10×</strong>
+              Faster execution on repetitive workflows
             </div>
-            <ul class="network-icon" aria-hidden="true">
-              <li>
-                <a href="mailto:msaleem2@charlotte.edu">
-                  <i class="fas fa-envelope big-icon"></i>
-                </a>
-              </li>
-              <li>
-                <a href="https://scholar.google.com/citations?user=8ZSRk3IAAAAJ&hl" target="_blank" rel="noopener">
-                  <i class="ai ai-google-scholar big-icon"></i>
-                </a>
-              </li>
-              <li>
-                <a href="https://github.com/m-usamasaleem" target="_blank" rel="noopener">
-                  <i class="fab fa-github big-icon"></i>
-                </a>
-              </li>
-              <li>
-                <a href="https://www.linkedin.com/in/muhammad-usama-saleem-504b65164" target="_blank" rel="noopener">
-                  <i class="fab fa-linkedin big-icon"></i>
-                </a>
-              </li>
-              <li>
-                <a href="https://x.com/usamasaleem_" target="_blank" rel="noopener">
-                  <i class="fab fa-twitter big-icon"></i>
-                </a>
-              </li>
+            <div class="hero-metric">
+              <strong>Hours</strong>
+              of manual work automated per customer per month
+            </div>
+          </div>
+        </div>
+
+        <aside class="hero-orbit-card">
+          <div class="orbit-heading">Multimodal Intelligence Engine</div>
+          <div class="orbit-main">
+            From perception to <span>understanding</span> to generation to action.
+          </div>
+          <p class="orbit-sub">
+            A unified stack that connects visual, audio and language models
+            into an agentic system that can watch, listen, reason and respond.
+          </p>
+          <div class="orbit-list">
+            <div class="orbit-tag">
+              <span class="orbit-dot"></span>
+              Video & audio understanding
+            </div>
+            <div class="orbit-tag">
+              <span class="orbit-dot"></span>
+              Object & human tracking
+            </div>
+            <div class="orbit-tag">
+              <span class="orbit-dot"></span>
+              Text & motion generation
+            </div>
+            <div class="orbit-tag">
+              <span class="orbit-dot"></span>
+              2D → 3D reconstruction
+            </div>
+          </div>
+        </aside>
+      </div>
+    </section>
+
+    <!-- Solutions -->
+    <section id="solutions">
+      <div class="container">
+        <div class="section-header">
+          <div class="section-kicker">Solutions</div>
+          <h2 class="section-title">From knowledge work to automated work</h2>
+          <p class="section-subtitle">
+            We eliminate repetitive knowledge tasks by pairing multimodal
+            perception with enterprise workflows—so your teams spend less time
+            clicking and more time creating.
+          </p>
+        </div>
+
+        <div class="grid-3">
+          <div class="card">
+            <span class="badge">Automation</span>
+            <h3>AI Assistants for Operations</h3>
+            <p>
+              Agents that ingest audio, video and documents, then draft reports,
+              update systems and orchestrate workflows across your tools.
+            </p>
+          </div>
+
+          <div class="card">
+            <span class="badge">Intelligence</span>
+            <h3>Real-world Understanding</h3>
+            <p>
+              Systems that detect, segment and track people and objects,
+              interpret scenes, and answer natural language questions
+              about what is happening.
+            </p>
+          </div>
+
+          <div class="card">
+            <span class="badge">Generation</span>
+            <h3>Content & Motion Generation</h3>
+            <p>
+              Text-to-video, video-to-audio, and controllable motion
+              generation models to create rich experiences from simple prompts.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Technology -->
+    <section id="technology">
+      <div class="container">
+        <div class="section-header">
+          <div class="section-kicker">Technology</div>
+          <h2 class="section-title">Percevio Labs’ Multimodal Intelligence Engine</h2>
+          <p class="section-subtitle">
+            A full stack of perception, understanding and generation models
+            that see the world in 2D and 3D, understand human motion, and
+            synthesize new audio, video and gestures.
+          </p>
+        </div>
+
+        <div class="grid-2">
+          <div class="card">
+            <h3>Perception</h3>
+            <ul class="list">
+              <li>Object detection & multi-camera tracking</li>
+              <li>Segmentation of people and scenes</li>
+              <li>Human skeletal pose estimation</li>
+              <li>3D body and hand mesh reconstruction</li>
+            </ul>
+          </div>
+
+          <div class="card">
+            <h3>Understanding & Generation</h3>
+            <ul class="list">
+              <li>Audio-visual language models for Q&A</li>
+              <li>Video-to-audio & text-to-video generation</li>
+              <li>Controllable text-to-motion & music-to-dance</li>
+              <li>Streamable audio-to-gesture generation</li>
             </ul>
           </div>
         </div>
-        <!-- expand text column -->
-        <div class="col-12 col-lg-9">
-          <h1>About me</h1>
-          <p> I am a Ph.D. candidate in Computer Science at the University of North Carolina at Charlotte, supervised by <strong>
-              <a href="https://scholar.google.com/citations?hl=en&user=0buJlAUAAAAJ" target="_blank">Dr. Pu Wang</a>
-            </strong> in the GENIUS Lab. In industry, I work as a researcher with the Computer Vision teams at <span class="inline-logo">
-              <a href="https://www.amazon.com/" target="_blank">
-                <img src="/author/usama/az.webp" alt="Amazon logo">
-              </a>
-            </span>
-            <!-- Amazon name separately -->
-            <a href="https://www.amazon.com/" target="_blank" class="logo-name">Amazon</a> and
-            <!-- Lowe’s logo only -->
-            <span class="inline-logo">
-              <a href="https://www.lowes.com/" target="_blank">
-                <img src="/author/usama/lowes.png" alt="Lowe’s logo">
-              </a>
-            </span>
-            <!-- Lowe’s name separately -->
-            <a href="https://www.lowes.com/" target="_blank" class="logo-name">Lowe’s</a> where I am developing large-scale, multimodal language models (MLLMs) to enhance operational efficiency and customer experience in complex, real-world environments. Moreover, I joined <span class="inline-logo">
-              <a href="https://www.google.com/" target="_blank">
-                <img src="/author/usama/google.png" alt="Google logo">
-              </a>
-            </span>
-            <a href="https://www.google.com/" target="_blank" class="logo-name">Google</a> as a Student Researcher in the Extended Reality (AR/VR) team, working on advancing multimodal and generative AI for immersive technologies.
-          </p>
-          <!--
-        <p>I am currently a Ph.D. candidate in the Department of Computer Science at the <strong><a href="https://www.charlotte.edu/" target="_blank">University of North Carolina at Charlotte</a></strong>, working under the supervision of <span style="color: #A6372A;"><strong><a href="https://scholar.google.com/citations?hl=en&user=0buJlAUAAAAJ&view_op=list_works&authuser=2&sortby=pubdate" target="_blank">Dr. Pu Wang</a></strong></span> at the <span style="color: #A6372A;"><em><a href="" target="_blank">GENIUS Lab</a></em></span>. My research focuses on advancing computer vision and generative AI, particularly in <strong>3D Human Pose Estimation</strong> and <strong>Mesh Recovery</strong>. Moreover, I am interested in <strong>3D Human Motion Generation</strong> driven by multi-modal inputs (e.g., text, music, or speech), with a focus on achieving controllable, high-quality synthesis for realistic and dynamically responsive motion generation in real-time interactive settings. Previously, at the <span style="color: #A6372A;"><em><a href="https://webpages.charlotte.edu/lfan4/index.html" target="_blank">Image Privacy Lab</a></em></span> under <span style="color: #A6372A;"><strong><a href="https://scholar.google.com/citations?hl=en&user=mPJmXakAAAAJ&view_op=list_works&sortby=pubdate" target="_blank">Dr. Liyue Fan</a></strong></span>, I developed privacy-preserving federated frameworks for generative AI, enabling secure synthetic data generation in non-IID settings. Currently, I am a researcher at Amazon and Lowe’s working on computer vision and generative AI. Before joining UNCC, I earned my Bachelor's degree in Computer Science from <strong><a href="https://_"></a></strong></p>
-        -->
-          <h2>Research Interests</h2>
-          <p> My research interests lie at the intersection of computer vision and generative AI, with a focus on 3D human modeling. Specifically, I focus on 3D human pose estimation and mesh reconstruction via generative masked modeling. Moreover, I’m interested in developing multimodal motion synthesis frameworks that synthesize controllable, high-fidelity 3D human animations for real time applications. </p>
-          <p>
-            <strong> If you have any research opportunities or open positions, please feel free to reach out at <a href="mailto:msaleem2@charlotte.edu" style="color: #A6372A;">
-                <em>msaleem2@charlotte.edu</em>
-              </a>. </strong>
-          </p>
-          <!--  In parallel, I’m building large-scale multimodal language models to enable robust video understanding in complex, real-world environments. -->
-          <!--
-        <p> My research interests lie in Computer Vision and Generative AI, specifically focusing on two interconnected pillars: </p><ul><li>3D Human Pose Estimation and Mesh Recovery</li><li>Multi-Modality Motion Synthesis</li></ul>
-        -->
-          <h3 class="news-heading">
-            <i class="fas fa-bell news-icon" aria-hidden="true"></i> News
-          </h3>
-          <ul class="news-list">
+      </div>
+    </section>
 
-            <li class="highlight-june-2025">
-              <i class="fas fa-bell news-icon" aria-hidden="true"></i>
-              <strong>Nov 2025:</strong> “LiveGesture: Streamable Co-Speech Gesture Generation Model” will be available on <strong style="color:#A6372A">arXiv</strong>!
-            </li>
-            <li class="highlight-june-2025">
-              <i class="fas fa-bell news-icon" aria-hidden="true"></i>
-              <strong>Nov 2025:</strong> “Monocular Models are Strong Learners for Multi-View Human Mesh Recovery” will be available on <strong style="color:#A6372A">arXiv</strong>!
-            </li>
-			  
-            <li class="highlight-june-2025">
-              <i class="fas fa-bell news-icon" aria-hidden="true"></i>
-              <strong>Nov 2025:</strong> “Walk Before You Dance: High-fidelity and Editable Dance Synthesis via Generative Masked Motion Prior” was accepted to <strong style="color:#A6372A">AAAI 2026</strong>!
-            </li>
-            <li class="highlight-june-2025">
-              <i class="fas fa-bell news-icon" aria-hidden="true"></i>
-              <strong>October 2025:</strong> Joined <a href="https://www.google.com/" target="_blank" class="logo-name">Google</a> as Student Researcher in Extended Reality (AR/VR) Team!
-            </li>
-            <li class="highlight-june-2025">
-              <i class="fas fa-bell news-icon" aria-hidden="true"></i>
-              <strong>October 2025:</strong> MaskControl paper selected for <em>Oral Presentation</em> and <em>🏆 Award Candidate</em> at <strong style="color:#A6372A">ICCV 2025</strong>!
-            </li>
-            <li class="highlight-june-2025">
-              <i class="fas fa-bell news-icon" aria-hidden="true"></i>
-              <strong>Aug 2025:</strong> Available for <span class="logo-name">Research Scientist / Engineer</span> oppertunities. Please reach out if there’s a good match.
-            </li>
-            <li class="highlight-june-2025">
-              <i class="fas fa-bell news-icon" aria-hidden="true"></i>
-              <strong>July 2025:</strong> Poster selected at <em> Amazon WWAS Science Fair Seattle</em>, presented next-gen multimodal shopping demo to VPs!
-            </li>
-            <li class="highlight-june-2025">
-              <i class="fas fa-bell news-icon" aria-hidden="true"></i>
-              <strong>June 2025:</strong> Joined <a href="https://www.amazon.com/" target="_blank" class="logo-name">Amazon</a> as Applied Scientist II Intern
-            </li>
-            <li class="highlight-june-2025">
-              <i class="fas fa-bell news-icon" aria-hidden="true"></i>
-              <strong>June 2025:</strong> A paper on “MaskHand: Generative Masked Modeling for Robust Hand Mesh Reconstruction in the Wild” is accepted to <strong style="color:#A6372A">ICCV 2025</strong>!
-            </li>
-            <li class="highlight-june-2025">
-              <i class="fas fa-bell news-icon" aria-hidden="true"></i>
-              <strong>June 2025:</strong> A paper on “Spatio-Temporal Control for Masked Motion Synthesis” is accepted to <strong style="color:#A6372A">ICCV 2025 (Oral)</strong>!
-            </li>
-            <li>
-              <strong>April 2025:</strong> “Walk Before You Dance: High-fidelity and Editable Dance Synthesis via Generative Masked Motion Prior” is now available on <strong style="color:#A6372A">arXiv</strong>.
-            </li>
-            <li>
-              <strong>Dec 2024:</strong> “GenHMR: Generative Human Mesh Recovery” was accepted to <strong style="color:#A6372A">AAAI 2025</strong>, presented in Philadelphia, and received a travel award.
-            </li>
-            <li>
-              <strong>Oct 2024:</strong> “BioPose: Biomechanically-Accurate 3D Pose Estimation from Monocular Videos” is accepted to <strong style="color:#A6372A">WACV 2025</strong>!
-            </li>
-            <li>
-              <strong>July 2024:</strong> “BAMM: Bidirectional Autoregressive Motion Model” is accepted to <strong style="color:#A6372A">ECCV 2024</strong>!
-            </li>
-            <li>
-              <i class="fas fa-bell news-icon" aria-hidden="true"></i>
-              <strong>Sept 2023:</strong> Joined <a href="https://www.lowes.com/" target="_blank" class="logo-name">Lowe’s</a> as Research Lead of the Computer Vision UNCC Team
-            </li>
-            <li>
-              <strong>June 2023:</strong> “Private Data Synthesis from Decentralized Non-IID Data” accepted to <strong style="color:#A6372A">IJCNN 2023</strong>, presented in Queensland, Australia, and received a $5500 travel grant!
-            </li>
-            <li>
-              <strong>April 2023:</strong> Presented at the <strong style="color:#A6372A">SIAM International Conference on Data Mining (SDM’23)</strong> Doctoral Forum; awarded NSF $1400 travel grant.
-            </li>
-            <li>
-              <strong>July 2022:</strong> “Privacy Enhancement for Cloud-Based Few-Shot Learning” accepted to <strong style="color:#A6372A">IJCNN 2022</strong>!
-            </li>
-            <li>
-              <strong>Jan 2022:</strong> “DP-Shield: Face Obfuscation with Differential Privacy” accepted to <strong style="color:#A6372A">EDBT 2022</strong>!
-            </li>
+    <!-- Industries / Opportunity -->
+    <section id="industries">
+      <div class="container">
+        <div class="section-header">
+          <div class="section-kicker">Opportunity Space</div>
+          <h2 class="section-title">Built for global SaaS & services businesses</h2>
+          <p class="section-subtitle">
+            AI adoption is accelerating across the globe. We focus on markets
+            where automation has the highest leverage and the shortest time
+            to value.
+          </p>
+        </div>
+
+        <div class="grid-3">
+          <div class="card">
+            <h3>SaaS & Product Companies</h3>
+            <p>
+              Embed multimodal capabilities into your product—video
+              understanding, smart content generation, and workflow automation
+              that differentiates your platform.
+            </p>
+          </div>
+
+          <div class="card">
+            <h3>Tech Consulting & Services</h3>
+            <p>
+              Deliver AI-first transformation for your clients with trusted
+              partners who understand both cutting-edge research and
+              large-scale deployment.
+            </p>
+          </div>
+
+          <div class="card">
+            <h3>Global Markets</h3>
+            <p>
+              Focus on US & Canada, KSA & UAE, Europe and Australia, with
+              localized go-to-market motions across outbound, platforms
+              and partnerships.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Operating Model -->
+    <section id="operating">
+      <div class="container">
+        <div class="section-header">
+          <div class="section-kicker">Operating Model</div>
+          <h2 class="section-title">A flexible bench of AI specialists</h2>
+          <p class="section-subtitle">
+            We combine a strong founding team with a scalable bench of
+            engineers, marketers and operators—so you can ramp from prototype
+            to production without friction.
+          </p>
+        </div>
+
+        <div class="grid-2">
+          <div class="card">
+            <h3>Teams & Roles</h3>
+            <ul class="list">
+              <li>Full-stack, ML & data engineers</li>
+              <li>Tech & project management</li>
+              <li>Marketing and sales associates</li>
+              <li>Bench capacity for rapid scaling</li>
+            </ul>
+          </div>
+
+          <div class="card">
+            <h3>Engagement Models</h3>
+            <ul class="list">
+              <li>Profit sharing on joint ventures</li>
+              <li>Contract and full-time engagements</li>
+              <li>Offline and online client acquisition</li>
+              <li>Transparent, accountable delivery</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Marketing / Growth -->
+    <section id="marketing">
+      <div class="container">
+        <div class="section-header">
+          <div class="section-kicker">Growth & Go-to-Market</div>
+          <h2 class="section-title">From strategy to revenue systems</h2>
+          <p class="section-subtitle">
+            Percevio Labs is backed by a dedicated marketing engine that
+            defines positioning, orchestrates multi-channel growth and
+            supports partners across regions.
+          </p>
+        </div>
+
+        <div class="grid-2">
+          <div class="card">
+            <h3>Strategic Marketing</h3>
+            <ul class="list">
+              <li>Positioning, ICP & pricing for each solution</li>
+              <li>GTM strategy for US, Canada, KSA & UAE</li>
+              <li>Brand narrative, messaging & differentiation</li>
+              <li>Monetization models & partnerships</li>
+            </ul>
+          </div>
+
+          <div class="card">
+            <h3>Execution & Growth Engine</h3>
+            <ul class="list">
+              <li>Content engine across LinkedIn & social</li>
+              <li>SEO/AEO & performance ads for demand</li>
+              <li>Cold email, LinkedIn & SDR-style outbound</li>
+              <li>Sales enablement, funnels & conversion systems</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Research & Projects -->
+    <section id="research">
+      <div class="container">
+        <div class="section-header">
+          <div class="section-kicker">Research & Innovation</div>
+          <h2 class="section-title">Cutting-edge AI research powering real-world solutions</h2>
+          <p class="section-subtitle">
+            Our team has published at top-tier conferences (ICCV, WACV, AAAI) and built
+            state-of-the-art multimodal AI systems. These breakthroughs inform
+            the technology we bring to enterprise clients.
+          </p>
+        </div>
+
+        <div style="margin-bottom:2.5rem;">
+          <div class="card">
+            <h3>BioPose: Biomechanically-accurate 3D Pose Estimation</h3>
+            <span class="badge">WACV 2025</span>
+            <p style="margin-bottom:1rem;">
+              Real-time, biomechanically accurate 3D human pose estimation from monocular video—
+              enabling healthcare, sports analytics, and AR/VR applications without specialized hardware.
+            </p>
+            <div style="display:grid; grid-template-columns:repeat(2,minmax(0,1fr)); gap:1rem; margin-bottom:0.8rem;">
+              <video controls style="border-radius:12px;">
+                <source src="publication/BioPose/assets/demo/neurik/Pitching.mp4" type="video/mp4">
+              </video>
+              <video controls style="border-radius:12px;">
+                <source src="publication/BioPose/assets/demo/neurik/Jumping.mp4" type="video/mp4">
+              </video>
+            </div>
+            <a href="https://arxiv.org/abs/2501.07800" target="_blank" style="font-size:0.85rem; color:var(--accent);">
+              View Paper →
+            </a>
+          </div>
+        </div>
+
+        <div style="margin-bottom:2.5rem;">
+          <div class="card">
+            <h3>GenHMR: Generative Human Mesh Recovery</h3>
+            <span class="badge">AAAI 2025</span>
+            <p style="margin-bottom:1rem;">
+              Probabilistic 3D mesh reconstruction that handles depth ambiguity and occlusions by
+              modeling multiple plausible hypotheses—critical for robust video understanding at scale.
+            </p>
+            <div style="display:grid; grid-template-columns:repeat(2,minmax(0,1fr)); gap:1rem; margin-bottom:0.8rem;">
+              <video controls style="border-radius:12px;">
+                <source src="publication/GenHMR/assets/demo/1.mp4" type="video/mp4">
+              </video>
+              <video controls style="border-radius:12px;">
+                <source src="publication/GenHMR/assets/demo/16.mp4" type="video/mp4">
+              </video>
+            </div>
+            <a href="https://arxiv.org/abs/2412.14444" target="_blank" style="font-size:0.85rem; color:var(--accent);">
+              View Paper →
+            </a>
+          </div>
+        </div>
+
+        <div style="margin-bottom:2.5rem;">
+          <div class="card">
+            <h3>LiveGesture: Streamable Co-Speech Gesture Generation</h3>
+            <span class="badge">Preprint</span>
+            <p style="margin-bottom:1rem;">
+              First fully streamable, zero-latency gesture generation framework for lifelike avatars and
+              real-time human-AI interaction—no look-ahead, arbitrary length, region-coordinated motion.
+            </p>
+            <div style="margin-bottom:0.8rem;">
+              <img src="publication/LiveGesture/assets/landing.png" alt="LiveGesture framework" style="width:100%; border-radius:12px;">
+            </div>
+            <p style="font-size:0.85rem; color:var(--text-muted); font-style:italic;">
+              Hierarchical autoregressive transformer with streamable motion tokenizer for causal, full-body gesture synthesis.
+            </p>
+          </div>
+        </div>
+
+        <div style="margin-bottom:2.5rem;">
+          <div class="card">
+            <h3>MaskHand: Generative Masked Modeling for Hand Reconstruction</h3>
+            <span class="badge">ICCV 2025</span>
+            <p style="margin-bottom:1rem;">
+              Robust 3D hand mesh reconstruction in challenging, occluded scenarios using masked modeling—
+              powering gesture control, AR interactions, and sign language recognition.
+            </p>
+            <div style="display:grid; grid-template-columns:repeat(2,minmax(0,1fr)); gap:1rem; margin-bottom:0.8rem;">
+              <video controls style="border-radius:12px;">
+                <source src="publication/MaskHand/assets/video/sample6.mp4" type="video/mp4">
+              </video>
+              <video controls style="border-radius:12px;">
+                <source src="publication/MaskHand/assets/video/chop.mp4" type="video/mp4">
+              </video>
+            </div>
+            <a href="https://arxiv.org/abs/2412.13393" target="_blank" style="font-size:0.85rem; color:var(--accent);">
+              View Paper →
+            </a>
+          </div>
+        </div>
+
+        <div class="card" style="background:var(--accent-soft); border-color:rgba(168,85,247,0.3);">
+          <h3>Impact & Recognition</h3>
+          <ul class="list">
+            <li>4 papers accepted at top AI/CV conferences (ICCV, WACV, AAAI)</li>
+            <li>State-of-the-art results on standard benchmarks</li>
+            <li>Real-time, production-ready inference optimized for enterprise deployment</li>
+            <li>Open collaboration with University of North Carolina at Charlotte & University of Central Florida</li>
           </ul>
         </div>
+
       </div>
-    </div>
-  </section>
-  <!-- <section id="skills" class="home-section wg-featurette   "><div class="container"><div class="row featurette"><div class="col-md-12 section-heading"><h1>Skills</h1></div><div class="col-12 col-sm-2"><div class="featurette-icon"><img src="/images/icon-pack/python.svg" alt="python" class="svg-icon svg-baseline"></div><h3></h3></div><div class="col-12 col-sm-2"><div class="featurette-icon"><img src="/images/icon-pack/C.svg" alt="C" class="svg-icon svg-baseline"></div><h3></h3></div><div class="col-12 col-sm-2"><div class="featurette-icon"><img src="/images/icon-pack/cplusplus.svg" alt="cplusplus" class="svg-icon svg-baseline"></div><h3></h3></div><div class="col-12 col-sm-2"><div class="featurette-icon"><img src="/images/icon-pack/csharp.svg" alt="csharp" class="svg-icon svg-baseline"></div><h3></h3></div><div class="col-12 col-sm-2"><div class="featurette-icon"><img src="/images/icon-pack/java.svg" alt="java" class="svg-icon svg-baseline"></div><h3></h3></div><div class="col-12 col-sm-2"><div class="featurette-icon"><img src="/images/icon-pack/matlab.svg" alt="matlab" class="svg-icon svg-baseline"></div><h3></h3></div><div class="col-12 col-sm-2"><div class="featurette-icon"><img src="/images/icon-pack/scala.svg" alt="scala" class="svg-icon svg-baseline"></div><h3></h3></div><div class="col-12 col-sm-2"><div class="featurette-icon"><img src="/images/icon-pack/mysql.svg" alt="mysql" class="svg-icon svg-baseline"></div><h3></h3></div><div class="col-12 col-sm-2"><div class="featurette-icon"><img src="/images/icon-pack/bash.svg" alt="bash" class="svg-icon svg-baseline"></div><h3></h3></div><div class="col-12 col-sm-2"><div class="featurette-icon"><img src="/images/icon-pack/latex.svg" alt="latex" class="svg-icon svg-baseline"></div><h3></h3></div><div class="col-12 col-sm-2"><div class="featurette-icon"><img src="/images/icon-pack/R.svg" alt="R" class="svg-icon svg-baseline"></div><h3></h3></div><div class="col-12 col-sm-2"><div class="featurette-icon"><img src="/images/icon-pack/haskell.svg" alt="haskell" class="svg-icon svg-baseline"></div><h3></h3></div><div class="col-12 col-sm-2"><div class="featurette-icon"><img src="/images/icon-pack/docker.svg" alt="docker" class="svg-icon svg-baseline"></div><h3></h3></div><div class="col-12 col-sm-2"><div class="featurette-icon"><img src="/images/icon-pack/git.svg" alt="git" class="svg-icon svg-baseline"></div><h3></h3></div><div class="col-12 col-sm-2"><div class="featurette-icon"><img src="/images/icon-pack/jupyter.svg" alt="jupyter" class="svg-icon svg-baseline"></div><h3></h3></div><div class="col-12 col-sm-2"><div class="featurette-icon"><img src="/images/icon-pack/numpy.svg" alt="numpy" class="svg-icon svg-baseline"></div><h3></h3></div><div class="col-12 col-sm-2"><div class="featurette-icon"><img src="/images/icon-pack/opencv.svg" alt="opencv" class="svg-icon svg-baseline"></div><h3></h3></div><div class="col-12 col-sm-2"><div class="featurette-icon"><img src="/images/icon-pack/pandas.svg" alt="pandas" class="svg-icon svg-baseline"></div><h3></h3></div><div class="col-12 col-sm-2"><div class="featurette-icon"><img src="/images/icon-pack/pytorch.svg" alt="pytorch" class="svg-icon svg-baseline"></div><h3></h3></div><div class="col-12 col-sm-2"><div class="featurette-icon"><img src="/images/icon-pack/scikit.svg" alt="scikit" class="svg-icon svg-baseline"></div><h3></h3></div><div class="col-12 col-sm-2"><div class="featurette-icon"><img src="/images/icon-pack/tensorflow.svg" alt="tensorflow" class="svg-icon svg-baseline"></div><h3></h3></div><div class="col-12 col-sm-2"><div class="featurette-icon"><img src="/images/icon-pack/huggingface.svg" alt="huggingface" class="svg-icon svg-baseline"></div><h3></h3></div></div></div></section> -->
-  <section id="experience" class="home-section wg-pages">
-    <div class="container">
-      <div class="row">
-        <div class="col-12">
-          <h1 class="text-center">Work Experience</h1>
+    </section>
+
+    <!-- About / Vision -->
+    <section id="about">
+      <div class="container">
+        <div class="section-header">
+          <div class="section-kicker">About</div>
+          <h2 class="section-title">Purpose, vision & team</h2>
+          <p class="section-subtitle">
+            We're building a world where AI agents quietly run the repetitive
+            parts of your business—so people can focus on strategy, creativity
+            and relationships.
+          </p>
         </div>
-      </div>
-      <div class="row">
-        <div class="col-12">
-          <div class="experience-item">
-            <div class="company-logo">
-              <img src="./author/usama/google.png" alt="Google logo" width="200">
+
+        <div class="grid-2">
+          <div class="card">
+            <h3>Purpose & Vision</h3>
+            <p>
+              Our purpose is to eliminate repetitive knowledge work by
+              enabling enterprises to have AI assistants that automate tasks,
+              draft content and orchestrate workflows. Our vision: businesses
+              run 10× faster because AI automation handles the everyday work.
+            </p>
+          </div>
+
+          <div class="card">
+            <h3>North Star Metric</h3>
+            <p>
+              We measure success by the hours of manual work automated per
+              customer per month—driven by value delivered, stickiness,
+              scalability and clear ROI.
+            </p>
+          </div>
+        </div>
+
+        <div style="margin-top:1.6rem;" class="team-grid">
+          <div class="card">
+            <div class="team-card">
+              <div class="avatar">US</div>
+              <div class="team-meta">
+                <h3>Muhammad Usama Saleem</h3>
+                <p>
+                  PhD Researcher in Computer Vision & AI at UNC Charlotte. 
+                  Published at ICCV, WACV, AAAI. Specializes in multimodal AI,
+                  3D vision, and generative models for enterprise deployment.
+                </p>
+              </div>
             </div>
-            <div class="experience-details">
-              <h3>Student Researcher at Extended Reality (AR/VR) Team</h3>
-              <p>
-                <span class="company-location">
-                  <strong>Google</strong>, San Francisco, CA </span>
-                <span class="employment-dates"> Nov. 2025 – Present </span>
+          </div>
+
+          <div class="card">
+            <div class="team-card">
+              <div class="avatar">UQ</div>
+              <div class="team-meta">
+                <h3>M&nbsp;Usama Qureshi</h3>
+                <p>
+                  B2B growth, performance marketing and SaaS lead generation.
+                  Specializes in scaling service businesses and building
+                  predictable pipelines.
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <div class="card">
+            <div class="team-card">
+              <div class="avatar">SA</div>
+              <div class="team-meta">
+                <h3>Shahzad&nbsp;Ahmad</h3>
+                <p>
+                  Experience scaling SaaS and e-commerce brands through
+                  Google Ads and PPC, turning acquisition into a repeatable
+                  growth engine.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- Contact -->
+    <section id="contact">
+      <div class="container">
+        <div class="section-header">
+          <div class="section-kicker">Contact</div>
+          <h2 class="section-title">Let’s explore your automation roadmap</h2>
+          <p class="section-subtitle">
+            Share a bit about your use case and we’ll follow up with ideas,
+            timelines and a pragmatic view on what multimodal AI can automate
+            for you today.
+          </p>
+        </div>
+
+        <div class="contact-grid">
+          <div class="card">
+            <!-- This is a static form; connect it to your favorite form backend (Formspree, Getform, etc.) -->
+            <form class="contact-form" name="contact">
+              <div>
+                <label for="name">Name</label>
+                <input id="name" name="name" type="text" placeholder="Your name" />
+              </div>
+              <div>
+                <label for="company">Company</label>
+                <input id="company" name="company" type="text" placeholder="Organization or team" />
+              </div>
+              <div>
+                <label for="email">Email</label>
+                <input id="email" name="email" type="email" placeholder="you@example.com" />
+              </div>
+              <div>
+                <label for="message">What would you like to automate?</label>
+                <textarea id="message" name="message" placeholder="Tell us about your workflows, data and goals."></textarea>
+              </div>
+              <div>
+                <button type="submit" class="btn btn-primary">
+                  Submit (static – wire to your backend)
+                </button>
+              </div>
+              <p class="contact-note">
+                Tip: to make this form fully functional on GitHub Pages,
+                connect it to a service like Formspree, Getform, or any API
+                endpoint you host.
               </p>
-            </div>
+            </form>
           </div>
-          <div class="experience-item">
-            <div class="company-logo">
-              <img src="./author/usama/amazon.webp" alt="Amazon logo" width="200">
-            </div>
-            <div class="experience-details">
-              <h3>Applied Scientist II Intern</h3>
-              <p>
-                <span class="company-location">
-                  <strong>Amazon Inc.</strong>, Boston, MA </span>
-                <span class="employment-dates"> June 2025 – Present </span>
-              </p>
-            </div>
-          </div>
-          <div class="experience-item">
-            <div class="company-logo">
-              <img src="./author/usama/lowes.png" alt="Lowe’s logo" width="200">
-            </div>
-            <div class="experience-details">
-              <h3>Research Lead, Computer Vision UNCC Team</h3>
-              <p>
-                <span class="company-location">
-                  <strong>Lowe’s</strong>, Charlotte, NC </span>
-                <span class="employment-dates"> Sept. 2023 – Present </span>
-              </p>
-            </div>
+
+          <div class="card">
+            <h3>Direct contact</h3>
+            <p style="font-size:0.86rem; color:var(--text-muted); margin-bottom:0.8rem;">
+              Prefer email or a call? Reach out and we'll coordinate a time
+              that works across your team.
+            </p>
+            <ul class="list">
+              <li><strong>Email:</strong> msaleem2@charlotte.edu</li>
+              <li><strong>Website:</strong> <a href="https://m-usamasaleem.github.io" target="_blank" style="color:var(--accent);">m-usamasaleem.github.io</a></li>
+              <li><strong>Region focus:</strong> US & Canada, KSA & UAE, Europe, Australia</li>
+              <li><strong>Typical engagement:</strong> discovery workshop → pilot → rollout</li>
+            </ul>
           </div>
         </div>
       </div>
-    </div>
-  </section>
-  <section id="publications" class="home-section wg-pages">
-    <div class="container">
-      <!-- Full-width heading -->
-      <div class="row">
-        <div class="col-12">
-          <h1 class="text-center">Recent Publications</h1>
-        </div>
-      </div>
-      <!-- Centered list at 80% width -->
-      <div class="row">
-        <div class="col-12">
-          <div class="pub-list mx-auto">
-            <div class="media stream-item boxed">
-              <div class="media-body">
-                <h4 class="article-title mb-1">
-                  <a href="https://m-usamasaleem.github.io/"> LiveGesture: Streamable Co-Speech Gesture Generation Model </a>
-                </h4>
-                <div class="conference-name">
-                  <strong>arXiv</strong>
-                </div>
-                <div class="stream-meta article-metadata mb-2"> <strong>
-                    <u>Muhammad Usama Saleem</u>
-                  </strong>, Mayur Jagdishbhai Patel, Ekkasit Pinyoanuntapong, Zhongxing Qin, Li Yang, Hongfei Xue, Ahmed Helmy, Chen Chen, Pu Wang </div>
-                <!-- <div class="mb-3" style="font-weight: bold; color: #A6372A; font-size: 0.85em;"> *Equal Contribution </div> -->
-                <div class="media-summary">LiveGesture is the first fully streamable, zero–look-ahead co-speech gesture generation framework that produces expressive, region-coordinated full-body motion in real time using a causal SVQ tokenizer and hierarchical autoregressive transformers. </div>
-                <div class="btn-links mb-4">
-                  <a class="btn btn-outline-primary btn-sm mr-2" href="./publication/LiveGesture/LiveGesture.html" target="_blank">PDF</a>
-                  <a class="btn btn-outline-primary btn-sm" href="./publication/LiveGesture/LiveGesture.html" target="_blank">Webpage</a>
-                </div>
-              </div>
-              <div class="thumbnail">
-                <img src="/author/usama/LiveGesture.png" alt="LiveGesture thumbnail" style="width:100%; height:100%; object-fit:cover;">
-              </div>
-            </div>
-            <!-- DanceMosaic -->
-            <div class="media stream-item boxed">
-              <div class="media-body">
-                <h4 class="article-title mb-1">
-                  <a href="https://foram-s1.github.io/DanceMosaic/"> Walk Before You Dance: High-fidelity and Editable Dance Synthesis via Generative Masked Motion Prior </a>
-                </h4>
-                <div class="conference-name">
-                  <strong>AAAI 2026</strong>
-                </div>
-                <div class="stream-meta article-metadata mb-2"> Foram Shah*, Parshwa Shah*, <strong>
-                    <u>Muhammad Usama Saleem</u>
-                  </strong>, Ekkasit Pinyoanuntapong, Pu Wang, Hongfei Xue, Ahmed Helmy </div>
-                <div class="mb-3" style="font-weight: bold; color: #A6372A; font-size: 0.85em;"> *Equal Contribution </div>
-                <div class="media-summary"> DanceMosaic is a novel multimodal masked motion framework—fusing text, music, and pose adapters via progressive generative masking with inference-time optimization for precise, editable motion. </div>
-                <div class="btn-links mb-4">
-                  <a class="btn btn-outline-primary btn-sm mr-2" href="https://arxiv.org/abs/2504.04634" target="_blank">PDF</a>
-                  <a class="btn btn-outline-primary btn-sm" href="https://foram-s1.github.io/DanceMosaic/" target="_blank">Webpage</a>
-                </div>
-              </div>
-              <div class="thumbnail">
-                <video autoplay loop muted playsinline>
-                  <source src="./videos/DanceMosaic.mkv" type="video/mp4">
-                </video>
-              </div>
-            </div>
-            <!-- MaskHand -->
-            <div class="media stream-item boxed">
-              <div class="media-body">
-                <h4 class="article-title">
-                  <a href="./publication/MaskHand/MaskHand.html"> MaskHand: Generative Masked Modeling for Robust Hand Mesh Reconstruction in the Wild </a>
-                </h4>
-                <div class="conference-name">
-                  <strong>ICCV 2025</strong>
-                </div>
-                <div class="stream-meta article-metadata">
-                  <strong>
-                    <u>Muhammad Usama Saleem</u>
-                  </strong>, Ekkasit Pinyoanuntapong, Mayur Jagdishbhai Patel, Hongfei Xue, Ahmed Helmy, Srijan Das, Pu Wang
-                </div>
-                <div class="media-summary"> MaskHand is a probabilistic masked modeling framework—tokenizing articulations with VQ-MANO and using a context-aware masked transformer to fuse multi-scale image features and 2D cues for iterative, confidence-guided sampling. </div>
-                <div class="btn-links">
-                  <a class="btn btn-outline-primary btn-sm" href="https://arxiv.org/abs/2412.13393" target="_blank">PDF</a>
-                  <a class="btn btn-outline-primary btn-sm" href="./publication/MaskHand/MaskHand.html" target="_blank">Webpage</a>
-                </div>
-              </div>
-              <div class="thumbnail">
-                <video autoplay loop muted playsinline>
-                  <source src="./videos/mmhmr.mp4" type="video/mp4">
-                </video>
-              </div>
-            </div>
-            <!-- ControlMM -->
-            <div class="media stream-item boxed">
-              <div class="media-body">
-                <h4 class="article-title">
-                  <a href="https://exitudio.github.io/ControlMM-page/"> MaskControl: Spatio-Temporal Control for Masked Motion Synthesis </a>
-                </h4>
-                <div class="conference-name">
-                  <strong>ICCV 2025 (Oral)</strong>
-                </div>
-                <div class="stream-meta article-metadata"> Ekkasit Pinyoanuntapong, <strong>
-                    <u>Muhammad Usama Saleem</u>
-                  </strong>, Korrawe Karunratanakul, Pu Wang, Hongfei Xue, Chen Chen, Chuan Guo, Junli Cao, Jian Ren, Sergey Tulyakov </div>
-                <div class="media-summary"> MaskControl is a novel masked generative motion model—combining masked consistency and inference-time logit editing in a parallel decoder for fast, high-fidelity, spatially precise motion generation. </div>
-                <div class="btn-links">
-                  <a class="btn btn-outline-primary btn-sm" href="https://arxiv.org/pdf/2410.10780" target="_blank">PDF</a>
-                  <a class="btn btn-outline-primary btn-sm" href="https://exitudio.github.io/ControlMM-page/" target="_blank">Webpage</a>
-                  <a class="btn btn-outline-primary btn-sm" href="https://github.com/exitudio/ControlMM" target="_blank">Code</a>
-                </div>
-              </div>
-              <div class="thumbnail">
-                <video autoplay loop muted playsinline>
-                  <source src="./videos/CAM.mp4" type="video/mp4">
-                </video>
-              </div>
-            </div>
-            <!-- GenHMR -->
-            <div class="media stream-item boxed">
-              <div class="media-body">
-                <h4 class="article-title">
-                  <a href="./publication/GenHMR/GenHMR.html"> GenHMR: Generative Human Mesh Recovery </a>
-                </h4>
-                <div class="conference-name">
-                  <strong>AAAI 2025</strong>
-                </div>
-                <div class="stream-meta article-metadata">
-                  <strong>
-                    <u>Muhammad Usama Saleem</u>
-                  </strong>, Ekkasit Pinyoanuntapong, Pu Wang, Hongfei Xue, Srijan Das, Chen Chen
-                </div>
-                <div class="media-summary"> GenHMR reframes monocular HMR as an image-conditioned generative task—employing a VQ-VAE pose tokenizer and masked transformer to model 2D→3D uncertainty, iteratively sampling high-confidence tokens and refining them with 2D cues for accurate mesh recovery. </div>
-                <div class="btn-links">
-                  <a class="btn btn-outline-primary btn-sm" href="https://arxiv.org/abs/2412.14444" target="_blank">PDF</a>
-                  <a class="btn btn-outline-primary btn-sm" href="./publication/GenHMR/GenHMR.html" target="_blank">Webpage</a>
-                </div>
-              </div>
-              <div class="thumbnail">
-                <video autoplay loop muted playsinline>
-                  <source src="./videos/genhmr.mp4" type="video/mp4">
-                </video>
-              </div>
-            </div>
-            <!-- BioPose -->
-            <div class="media stream-item boxed">
-              <div class="media-body">
-                <h4 class="article-title">
-                  <a href="./publication/BioPose/BioPose.html"> BioPose: Biomechanically-accurate 3D Pose Estimation from Monocular Videos </a>
-                </h4>
-                <div class="conference-name">
-                  <strong>WACV 2025</strong>
-                </div>
-                <div class="stream-meta article-metadata">
-                  <strong>
-                    <u>Muhammad Usama Saleem*</u>
-                  </strong>, Farnoosh Koleini*, Pu Wang, Hongfei Xue, Ahmed Helmy, Abbey Fenwick
-                </div>
-                <div class="media-summary"> BioPose is a novel biomechanics-guided 3D pose estimation framework—combining a multi-query deformable transformer for precise mesh recovery, a neural IK network that enforces anatomical constraints, and 2D-informed iterative pose refinement. </div>
-                <div class="btn-links">
-                  <a class="btn btn-outline-primary btn-sm" href="https://arxiv.org/abs/2501.07800" target="_blank">PDF</a>
-                  <a class="btn btn-outline-primary btn-sm" href="./publication/BioPose/BioPose.html" target="_blank">Webpage</a>
-                </div>
-              </div>
-              <div class="thumbnail">
-                <video autoplay loop muted playsinline>
-                  <source src="./videos/biopose.mp4" type="video/mp4">
-                </video>
-              </div>
-            </div>
-            <!-- BAMM -->
-            <div class="media stream-item boxed">
-              <div class="media-body">
-                <h4 class="article-title mb-1">
-                  <a href="https://exitudio.github.io/BAMM-page/"> BAMM: Bidirectional Autoregressive Motion Model </a>
-                </h4>
-                <div class="conference-name">
-                  <strong>ECCV 2024</strong>
-                </div>
-                <div class="stream-meta article-metadata mb-3"> Ekkasit Pinyoanuntapong, <strong>
-                    <u>Muhammad Usama Saleem</u>
-                  </strong>, Pu Wang, Minwoo Lee, Srijan Das, Chen Chen </div>
-                <div class="media-summary"> BAMM is a novel text-to-motion framework that employs a hybrid-masked self-attention transformer—merging generative masking with autoregression to handle dynamic sequence lengths and enable editable, high-quality motion. </div>
-                <div class="btn-links mb-4">
-                  <a class="btn btn-outline-primary btn-sm mr-2" href="https://arxiv.org/abs/2403.19435" target="_blank">PDF</a>
-                  <a class="btn btn-outline-primary btn-sm mr-2" href="https://exitudio.github.io/BAMM-page/" target="_blank">Webpage</a>
-                  <a class="btn btn-outline-primary btn-sm" href="https://github.com/exitudio/BAMM/" target="_blank">Code</a>
-                </div>
-              </div>
-              <div class="thumbnail">
-                <video autoplay loop muted playsinline>
-                  <source src="./videos/BAMM.mp4" type="video/mp4">
-                </video>
-              </div>
-            </div>
-            <!-- Private Data Synthesis -->
-            <div class="media stream-item boxed">
-              <div class="media-body">
-                <h4 class="article-title mb-1">
-                  <a href="./publication/DPFedProxGAN/dpfedproxgan.html"> Private Data Synthesis from Decentralized Non-IID Data </a>
-                </h4>
-                <div class="conference-name">
-                  <strong>IJCNN 2023</strong>
-                </div>
-                <div class="stream-meta article-metadata mb-3">
-                  <strong>
-                    <u>Muhammad Usama Saleem</u>
-                  </strong>, L. Fan
-                </div>
-                <div class="media-summary"> DPFedProxGAN is a federated, differentially-private GAN that generates realistic synthetic images from non-IID distributed data using local DP and FedProx optimization. </div>
-                <div class="btn-links mb-4">
-                  <a class="btn btn-outline-primary btn-sm mr-2" href="https://ieeexplore.ieee.org/document/10191553" target="_blank">PDF</a>
-                  <a class="btn btn-outline-primary btn-sm mr-2" href="./publication/DPFedProxGAN/Private_Data_Synthesis_from_Decentralized_Non_IID_Data_with_Appendix_IJCNN_23.pdf" target="_blank">Supplementary</a>
-                  <a class="btn btn-outline-primary btn-sm" href="./publication/DPFedProxGAN/dpfedproxgan.html" target="_blank">Webpage</a>
-                </div>
-              </div>
-              <div class="thumbnail">
-                <img src="/publication/06-fs-data-synthesis/private_data.png" alt="Private Data Synthesis">
-              </div>
-            </div>
-            <!-- Privacy Enhancement for Cloud-Based Few-Shot Learning -->
-            <div class="media stream-item boxed">
-              <div class="media-body">
-                <h4 class="article-title mb-1">
-                  <a href="/publication/05-fs-privacy/"> Privacy Enhancement for Cloud-Based Few-Shot Learning </a>
-                </h4>
-                <div class="conference-name">
-                  <strong>IJCNN 2022</strong>
-                </div>
-                <div class="stream-meta article-metadata mb-3"> A. Parnami, <strong>
-                    <u>Muhammad Usama Saleem</u>
-                  </strong>, L. Fan, M. Lee </div>
-                <div class="media-summary"> A novel few-shot framework uses a joint privacy–classification loss to learn embeddings that protect image data while maintaining high few-shot accuracy in cloud-based vision. </div>
-                <div class="btn-links mb-4">
-                  <a class="btn btn-outline-primary btn-sm" href="https://arxiv.org/abs/2205.07864" target="_blank">PDF</a>
-                </div>
-              </div>
-              <div class="thumbnail">
-                <img src="/publication/05-fs-privacy/featured_hu5afa6d22d114b7460f804b57e93d75ca_82188_150x0_resize_lanczos_3.png" alt="Privacy Enhancement">
-              </div>
-            </div>
-            <!-- DP-Shield: Face Obfuscation with Differential Privacy -->
-            <div class="media stream-item boxed">
-              <div class="media-body">
-                <h4 class="article-title mb-1">
-                  <a href="http://3.223.148.187/"> DP-Shield: Face Obfuscation with Differential Privacy </a>
-                </h4>
-                <div class="conference-name">
-                  <strong>EDBT 2022</strong>
-                </div>
-                <div class="stream-meta article-metadata mb-3">
-                  <strong>
-                    <u>Muhammad Usama Saleem</u>
-                  </strong>, D. Reilly, L. Fan
-                </div>
-                <div class="media-summary"> DP-Shield safeguards against unauthorized face recognition by applying differential privacy–based obfuscation and providing image quality and recognition-risk metrics. </div>
-                <div class="btn-links mb-4">
-                  <a class="btn btn-outline-primary btn-sm mr-2" href="https://openproceedings.org/2022/conf/edbt/paper-150.pdf" target="_blank">PDF</a>
-                  <a class="btn btn-outline-primary btn-sm mr-2" href="http://3.223.148.187/" target="_blank">Webpage</a>
-                  <a class="btn btn-outline-primary btn-sm" href="https://github.com/m-usamasaleem/DP-Shield-EDBT-22" target="_blank">Code</a>
-                </div>
-              </div>
-              <div class="thumbnail">
-                <video style="width:150px; height:90px; object-fit:cover;" autoplay loop muted playsinline>
-                  <source src="./videos/edbt.webm" type="video/mp4">
-                </video>
-              </div>
-            </div>
-          </div>
-        </div>
+    </section>
+  </main>
+
+  <footer>
+    <div class="container footer-grid">
+      <div>© <span id="year"></span> Percevio Labs. All rights reserved.</div>
+      <div class="footer-links">
+        <a href="#hero">Top</a>
+        <a href="#about">About</a>
+        <a href="#contact">Contact</a>
       </div>
     </div>
-  </section>
-  <!-- <section id="posts" class="home-section wg-pages   "> -->
-  <!-- <div class="container"> -->
-  <!-- <div class="row"><div class="col-12 col-lg-4 section-heading"><h1>Recent Posts</h1></div><div class="col-12 col-lg-8"><div class="media stream-item"><div class="media-body"><h3 class="article-title mb-0 mt-0"><a href="/post/laplacian-fsl/">Laplacian Regularized Few-Shot Learning</a></h3><a href="/post/laplacian-fsl/" class="summary-link"><div class="article-style"> Paper https://arxiv.org/abs/2006.15486 Code
-                  https://github.com/imtiazziko/LaplacianShot Main Idea Transfer Learning: Image embeddings are obtained
-                  by pre-training a network on the set of base classes using cross-entropy loss. </div></a><div class="stream-meta article-metadata"><div class="article-metadata"><div><span><a href="/author/usama/">Muhammad Usama Saleem</a></span></div><span class="article-date"> Aug 3, 2020 </span><span class="middot-divider"></span><span class="article-reading-time"> 2 min read </span><span class="middot-divider"></span><span class="article-categories"><i class="fas fa-folder mr-1"></i><a href="/category/Machine Learning/">Machine Learning</a></span></div></div></div><div class="ml-3"></div></div></div></div> -->
-  <!-- </div> -->
-  <!-- </section> -->
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js" integrity="sha256-9/aliU8dGd2tb6OSsuzixeV4y/faTqgFtohetphbbj0=" crossorigin="anonymous"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.imagesloaded/4.1.4/imagesloaded.pkgd.min.js" integrity="sha256-lqvxZrPLtfffUl2G/e7szqSvPBILGbwmsGE1MKlOi0Q=" crossorigin="anonymous"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.isotope/3.0.6/isotope.pkgd.min.js" integrity="sha256-CBrpuqrMhXwcLLUd5tvQ4euBHCdh7wGlDfNz8vbu/iI=" crossorigin="anonymous"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.7/jquery.fancybox.min.js" integrity="sha256-yt2kYMy0w8AbtF89WXb2P1rfjcP/HTHLT7097U8Y5b8=" crossorigin="anonymous"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/instant.page/5.1.0/instantpage.min.js" integrity="sha512-1+qUtKoh9XZW7j+6LhRMAyOrgSQKenQ4mluTR+cvxXjP1Z54RxZuzstR/H9kgPXQsVB8IW7DMDFUJpzLjvhGSQ==" crossorigin="anonymous"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/mermaid/8.4.8/mermaid.min.js" integrity="sha256-lyWCDMnMeZiXRi7Zl54sZGKYmgQs4izcT7+tKc+KUBk=" crossorigin="anonymous" title="mermaid"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.18.1/highlight.min.js" integrity="sha256-eOgo0OtLL4cdq7RdwRUiGKLX9XsIJ7nGhWEKbohmVAQ=" crossorigin="anonymous"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.18.1/languages/r.min.js"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.5.1/leaflet.js" integrity="sha256-EErZamuLefUnbMBQbsEqu1USa+btR2oIlCpBJbyD4/g=" crossorigin="anonymous"></script>
-  <script>
-    const code_highlighting = true;
-  </script>
-  <script>
-    const isSiteThemeDark = false;
-  </script>
-  <script>
-    const search_config = {
-      "indexURI": "/index.json",
-      "minLength": 1,
-      "threshold": 0.3
-    };
-    const i18n = {
-      "no_results": "No results found",
-      "placeholder": "Search...",
-      "results": "results found"
-    };
-    const content_type = {
-      'post': "Posts",
-      'project': "Projects",
-      'publication': "Publications",
-      'talk': "Talks",
-      'slides': "Slides"
-    };
-  </script>
-  <script id="search-hit-fuse-template" type="text/x-template"> <div class="search-hit" id="summary-{{key}}">
-																																																					<div class="search-hit-content">
-																																																						<div class="search-hit-name">
-																																																							<a href="{{relpermalink}}">{{title}}</a>
-																																																							<div class="article-metadata search-hit-type">{{type}}</div>
-																																																							<p class="search-hit-description">{{snippet}}</p>
-																																																						</div>
-																																																					</div>
-																																																				</div>
-																																																			</script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/fuse.js/3.2.1/fuse.min.js" integrity="sha256-VzgmKYmhsGNNN4Ph1kMW+BjoYJM2jV5i4IlFoeZA9XI=" crossorigin="anonymous"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/mark.js/8.11.1/jquery.mark.min.js" integrity="sha256-4HLtjeVgH0eIB3aZ9mLYF6E8oU5chNdjU6p6rrXpl9U=" crossorigin="anonymous"></script>
-  <script>
-    if (window.netlifyIdentity) {
-      window.netlifyIdentity.on("init", user => {
-        if (!user) {
-          window.netlifyIdentity.on("login", () => {
-            document.location.href = "/admin/";
-          });
-        }
-      });
-    }
-  </script>
-  <script src="/js/academic.min.341e58d06db179e1d53f3322b6883f4c.js"></script>
-  <div class="container">
-    <div id="visitor-map">
-      <script type="text/javascript" id="mapmyvisitors" src="//mapmyvisitors.com/map.js?d=8PZR3rhBAnuOEFb9RecojjlYPmyeuvZ7B5cY31wCebE&cl=ffffff&w=a"></script>
-      <noscript>
-        <div id="fallback-message"> Visitor map cannot be displayed because JavaScript is disabled in your browser. </div>
-      </noscript>
-    </div>
-    <footer class="site-footer">
-      <p class="powered-by">
-        <a href="/tag/privacy/">Privacy</a>
-      </p>
-      <p class="powered-by"> @2022 Muhammad Usama Saleem. All Rights Reserved. </p>
-      <span class="float-right" aria-hidden="true">
-        <a href="#" class="back-to-top">
-          <span class="button_icon">
-            <i class="fas fa-chevron-up fa-2x"></i>
-          </span>
-        </a>
-      </span>
-    </footer>
-  </div>
-  <div id="modal" class="modal fade" role="dialog">
-    <div class="modal-dialog">
-      <div class="modal-content">
-        <div class="modal-header">
-          <h5 class="modal-title">Cite</h5>
-          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-            <span aria-hidden="true">&times;</span>
-          </button>
-        </div>
-        <div class="modal-body">
-          <pre>
-																																																								<code class="tex hljs"></code>
-																																																							</pre>
-        </div>
-        <div class="modal-footer">
-          <a class="btn btn-outline-primary my-1 js-copy-cite" href="#" target="_blank">
-            <i class="fas fa-copy"></i> Copy </a>
-          <a class="btn btn-outline-primary my-1 js-download-cite" href="#" target="_blank">
-            <i class="fas fa-download"></i> Download </a>
-          <div id="modal-error"></div>
-        </div>
-      </div>
-    </div>
-  </div>
-  </body>
+  </footer>
+</div>
+
+<script>
+  // Mobile nav toggle
+  const navToggle = document.querySelector(".nav-toggle");
+  const navMenu = document.getElementById("navMenu");
+  navToggle.addEventListener("click", () => {
+    navMenu.classList.toggle("open");
+  });
+
+  // Close menu when clicking a link (mobile)
+  document.querySelectorAll(".nav-links a").forEach((link) => {
+    link.addEventListener("click", () => {
+      navMenu.classList.remove("open");
+    });
+  });
+
+  // Current year in footer
+  document.getElementById("year").textContent = new Date().getFullYear();
+</script>
+</body>
 </html>
